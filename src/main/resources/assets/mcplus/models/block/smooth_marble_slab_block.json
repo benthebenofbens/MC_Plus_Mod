@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "mcplus:block/smooth_marble",
+    "side": "mcplus:block/smooth_marble_slab_side",
+    "top": "mcplus:block/smooth_marble"
+  }
+}

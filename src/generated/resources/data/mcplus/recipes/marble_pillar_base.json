@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "mcplus:marble_pillar"
+    },
+    "S": {
+      "item": "mcplus:smooth_marble_slab"
+    }
+  },
+  "pattern": [
+    "P",
+    "S"
+  ],
+  "result": {
+    "item": "mcplus:marble_pillar_base"
+  },
+  "show_notification": true
+}

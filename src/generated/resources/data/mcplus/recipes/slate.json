@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "minecraft:deepslate"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "SD",
+    "DS"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcplus:slate"
+  },
+  "show_notification": true
+}
