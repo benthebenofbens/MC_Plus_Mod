@@ -46,7 +46,9 @@ public class MCPlusBlocks {
     public static final RegistryObject<Block> GNEISS_TILES = registerBlock("gneiss_tiles", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
     public static final RegistryObject<Block> CRACKED_GNEISS_TILES = registerBlock("cracked_gneiss_tiles", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
     public static final RegistryObject<Block> ENERGIZED_GNEISS_TILES = registerBlock("energized_gneiss_tiles", () -> new PoweredBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)){@Override public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) { return 7; }});
-    //public static final RegistryObject<Block> GNEISS_PILLAR = registerBlock("gneiss_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
+    public static final RegistryObject<Block> GNEISS_PILLAR = registerBlock("gneiss_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
+    public static final RegistryObject<Block> GNEISS_PILLAR_CAPITAL = registerBlock("gneiss_pillar_capital", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
+    public static final RegistryObject<Block> GNEISS_PILLAR_BASE = registerBlock("gneiss_pillar_base", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
     public static final RegistryObject<Block> SMOOTH_GNEISS = registerBlock("smooth_gneiss", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
     public static final RegistryObject<Block> SMOOTH_GNEISS_SLAB = registerBlock("smooth_gneiss_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
 
@@ -71,6 +73,8 @@ public class MCPlusBlocks {
     public static final RegistryObject<Block> CRACKED_SLATE_TILES = registerBlock("cracked_slate_tiles", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE_TILES)));
     public static final RegistryObject<Block> BEDAZZLED_SLATE_TILES = registerBlock("bedazzled_slate_tiles", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE_TILES)));
     public static final RegistryObject<Block> SLATE_PILLAR = registerBlock("slate_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> SLATE_PILLAR_CAPITAL = registerBlock("slate_pillar_capital", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> SLATE_PILLAR_BASE = registerBlock("slate_pillar_base", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
     public static final RegistryObject<Block> SMOOTH_SLATE = registerBlock("smooth_slate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
     public static final RegistryObject<Block> SMOOTH_SLATE_SLAB = registerBlock("smooth_slate_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
 
@@ -132,6 +136,21 @@ public class MCPlusBlocks {
         public MutableComponent getDisplayName() {
             return Component.translatable(this.getDescriptionId() + ".desc");
         }});
+   // public static final RegistryObject<Block> COBBLED_SLATE = registerBlock("cobbled_slate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
+  //  public static final RegistryObject<Block> BEDAZZLED_COBBLED_SLATE = registerBlock("bedazzled_cobbled_slate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> CHERT_BRICKS = registerBlock("chert_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS)));
+    public static final RegistryObject<Block> CRACKED_CHERT_BRICKS = registerBlock("cracked_chert_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS)));
+    public static final RegistryObject<Block> CRYSTALLINE_CHERT_BRICKS = registerBlock("crystalline_chert_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS)));
+    public static final RegistryObject<Block> POLISHED_CHERT = registerBlock("polished_chert", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
+    public static final RegistryObject<Block> CHISELED_CHERT = registerBlock("chiseled_chert", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
+    public static final RegistryObject<Block> CHERT_TILES = registerBlock("chert_tiles", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_TILES)));
+    public static final RegistryObject<Block> CRACKED_CHERT_TILES = registerBlock("cracked_chert_tiles", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_TILES)));
+    public static final RegistryObject<Block> CRYSTALLINE_CHERT_TILES = registerBlock("crystalline_chert_tiles", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_TILES)));
+  //  public static final RegistryObject<Block> SLATE_PILLAR = registerBlock("slate_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
+  //  public static final RegistryObject<Block> SLATE_PILLAR_CAPITAL = registerBlock("slate_pillar_capital", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
+  //  public static final RegistryObject<Block> SLATE_PILLAR_BASE = registerBlock("slate_pillar_base", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> SMOOTH_CHERT = registerBlock("smooth_chert", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
+    public static final RegistryObject<Block> SMOOTH_CHERT_SLAB = registerBlock("smooth_chert_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
 
 
 

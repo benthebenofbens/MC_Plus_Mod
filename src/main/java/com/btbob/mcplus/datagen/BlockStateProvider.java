@@ -29,8 +29,12 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
         blockWithItem(MCPlusBlocks.CRACKED_GNEISS_TILES);
         blockWithItem(MCPlusBlocks.ENERGIZED_GNEISS_TILES);
         blockWithItem(MCPlusBlocks.SMOOTH_GNEISS);
-        //axisBlock(((RotatedPillarBlock) MCPlusBlocks.GNEISS_PILLAR.get()), blockTexture(MCPlusBlocks.GNEISS_PILLAR.get()), new ResourceLocation(MCPlus.MODID, "block/gneiss_pillar_top"));
-        //blockItem(MCPlusBlocks.GNEISS_PILLAR);
+        axisBlock(((RotatedPillarBlock) MCPlusBlocks.GNEISS_PILLAR.get()), blockTexture(MCPlusBlocks.GNEISS_PILLAR.get()), new ResourceLocation(MCPlus.MODID, "block/gneiss_pillar_top"));
+        blockItem(MCPlusBlocks.GNEISS_PILLAR);
+        axisBlock(((RotatedPillarBlock) MCPlusBlocks.GNEISS_PILLAR_CAPITAL.get()), blockTexture(MCPlusBlocks.GNEISS_PILLAR_CAPITAL.get()), new ResourceLocation(MCPlus.MODID, "block/gneiss_pillar_top"));
+        blockItem(MCPlusBlocks.GNEISS_PILLAR_CAPITAL);
+        axisBlock(((RotatedPillarBlock) MCPlusBlocks.GNEISS_PILLAR_BASE.get()), blockTexture(MCPlusBlocks.GNEISS_PILLAR_BASE.get()), new ResourceLocation(MCPlus.MODID, "block/gneiss_pillar_top"));
+        blockItem(MCPlusBlocks.GNEISS_PILLAR_BASE);
         //MARBLE
         blockWithItem(MCPlusBlocks.MARBLE);
         blockWithItem(MCPlusBlocks.COBBLED_MARBLE);
@@ -65,8 +69,29 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
         blockWithItem(MCPlusBlocks.SMOOTH_SLATE);
         axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
         blockItem(MCPlusBlocks.SLATE_PILLAR);
+        axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR_CAPITAL.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
+        blockItem(MCPlusBlocks.SLATE_PILLAR_CAPITAL);
+        axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR_BASE.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR_BASE.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
+        blockItem(MCPlusBlocks.SLATE_PILLAR_BASE);
         //CHERT
         blockWithItem(MCPlusBlocks.CHERT);
+      //  blockWithItem(MCPlusBlocks.COBBLED_SLATE);
+      //  blockWithItem(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE);
+        blockWithItem(MCPlusBlocks.CHERT_BRICKS);
+        blockWithItem(MCPlusBlocks.CRACKED_CHERT_BRICKS);
+        blockWithItem(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS);
+        blockWithItem(MCPlusBlocks.POLISHED_CHERT);
+        blockWithItem(MCPlusBlocks.CHISELED_CHERT);
+        blockWithItem(MCPlusBlocks.CHERT_TILES);
+        blockWithItem(MCPlusBlocks.CRACKED_CHERT_TILES);
+        blockWithItem(MCPlusBlocks.CRYSTALLINE_CHERT_TILES);
+        blockWithItem(MCPlusBlocks.SMOOTH_CHERT);
+      //  axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
+       // blockItem(MCPlusBlocks.SLATE_PILLAR);
+      //  axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR_CAPITAL.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
+      //  blockItem(MCPlusBlocks.SLATE_PILLAR_CAPITAL);
+      //  axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR_BASE.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR_BASE.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
+      //  blockItem(MCPlusBlocks.SLATE_PILLAR_BASE);
         //LIMESTONE
         blockWithItem(MCPlusBlocks.LIMESTONE);
         //GABBRO

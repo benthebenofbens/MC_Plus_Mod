@@ -46,6 +46,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_GNEISS_SLAB);
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_SLATE_SLAB);
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_MARBLE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.SMOOTH_CHERT_SLAB);
 
     }
 

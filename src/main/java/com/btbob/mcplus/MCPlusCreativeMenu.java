@@ -14,9 +14,9 @@ public class MCPlusCreativeMenu {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MCPlus.MODID);
 
     //PLATINUM + ADDITIONAL ORES AND GEMSTONE LATER :>
-    public static final RegistryObject<CreativeModeTab> MC_PLUS_TAB = CREATIVE_MODE_TABS.register("mc_plus_tab",
+    public static final RegistryObject<CreativeModeTab> MC_PLUS_TAB = CREATIVE_MODE_TABS.register("mc_plus_building_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(MCPlusBlocks.GNEISS.get()))
-                    .title(Component.translatable("creativetab.mc_plus_tab"))
+                    .title(Component.translatable("creativetab.mc_plus_building_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         //GNEISS
                         pOutput.accept(MCPlusBlocks.GNEISS.get());
@@ -32,9 +32,9 @@ public class MCPlusCreativeMenu {
                         pOutput.accept(MCPlusBlocks.GNEISS_TILES.get());
                         pOutput.accept(MCPlusBlocks.CRACKED_GNEISS_TILES.get());
                         pOutput.accept(MCPlusBlocks.ENERGIZED_GNEISS_TILES.get());
-                        //pOutput.accept(MCPlusBlocks.GNEISS_PILLAR.get());
-                        //LIMESTONE
-                        pOutput.accept(MCPlusBlocks.LIMESTONE.get());
+                        pOutput.accept(MCPlusBlocks.GNEISS_PILLAR_CAPITAL.get());
+                        pOutput.accept(MCPlusBlocks.GNEISS_PILLAR.get());
+                        pOutput.accept(MCPlusBlocks.GNEISS_PILLAR_BASE.get());
                         //MARBLE
                         pOutput.accept(MCPlusBlocks.MARBLE.get());
                         pOutput.accept(MCPlusBlocks.COBBLED_MARBLE.get());
@@ -66,12 +66,30 @@ public class MCPlusCreativeMenu {
                         pOutput.accept(MCPlusBlocks.SLATE_TILES.get());
                         pOutput.accept(MCPlusBlocks.CRACKED_SLATE_TILES.get());
                         pOutput.accept(MCPlusBlocks.BEDAZZLED_SLATE_TILES.get());
+                        pOutput.accept(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get());
                         pOutput.accept(MCPlusBlocks.SLATE_PILLAR.get());
-
+                        pOutput.accept(MCPlusBlocks.SLATE_PILLAR_BASE.get());
+                        //LIMESTONE
+                        pOutput.accept(MCPlusBlocks.LIMESTONE.get());
                         //GABBRO
                         pOutput.accept(MCPlusBlocks.GABBRO.get());
                         //CHERT
                         pOutput.accept(MCPlusBlocks.CHERT.get());
+                     //   pOutput.accept(MCPlusBlocks.COBBLED_SLATE.get());
+                      //  pOutput.accept(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE.get());
+                        pOutput.accept(MCPlusBlocks.CHERT_BRICKS.get());
+                        pOutput.accept(MCPlusBlocks.CRACKED_CHERT_BRICKS.get());
+                        pOutput.accept(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS.get());
+                        pOutput.accept(MCPlusBlocks.POLISHED_CHERT.get());
+                        pOutput.accept(MCPlusBlocks.CHISELED_CHERT.get());
+                        pOutput.accept(MCPlusBlocks.SMOOTH_CHERT.get());
+                        pOutput.accept(MCPlusBlocks.SMOOTH_CHERT_SLAB.get());
+                        pOutput.accept(MCPlusBlocks.CHERT_TILES.get());
+                        pOutput.accept(MCPlusBlocks.CRACKED_CHERT_TILES.get());
+                        pOutput.accept(MCPlusBlocks.CRYSTALLINE_CHERT_TILES.get());
+                     //   pOutput.accept(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get());
+                     //   pOutput.accept(MCPlusBlocks.SLATE_PILLAR.get());
+                      //  pOutput.accept(MCPlusBlocks.SLATE_PILLAR_BASE.get());
                     })
                     .build());
 

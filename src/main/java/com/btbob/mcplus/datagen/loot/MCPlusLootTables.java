@@ -30,7 +30,9 @@ public class MCPlusLootTables extends BlockLootSubProvider {
         this.dropSelf(MCPlusBlocks.ENERGIZED_GNEISS_TILES.get());
         this.dropSelf(MCPlusBlocks.SMOOTH_GNEISS.get());
         this.add(MCPlusBlocks.SMOOTH_GNEISS_SLAB.get(), block -> createSlabItemTable(MCPlusBlocks.SMOOTH_GNEISS_SLAB.get()));
-        //this.dropSelf(MCPlusBlocks.GNEISS_PILLAR.get());
+        this.dropSelf(MCPlusBlocks.GNEISS_PILLAR.get());
+        this.dropSelf(MCPlusBlocks.GNEISS_PILLAR_CAPITAL.get());
+        this.dropSelf(MCPlusBlocks.GNEISS_PILLAR_BASE.get());
         //SLATE
         this.add(MCPlusBlocks.SLATE.get(), block -> createSingleItemTableWithSilkTouch(MCPlusBlocks.SLATE.get(), MCPlusBlocks.COBBLED_SLATE.get()));
         this.dropSelf(MCPlusBlocks.COBBLED_SLATE.get());
@@ -46,6 +48,8 @@ public class MCPlusLootTables extends BlockLootSubProvider {
         this.dropSelf(MCPlusBlocks.SMOOTH_SLATE.get());
         this.add(MCPlusBlocks.SMOOTH_SLATE_SLAB.get(), block -> createSlabItemTable(MCPlusBlocks.SMOOTH_SLATE_SLAB.get()));
         this.dropSelf(MCPlusBlocks.SLATE_PILLAR.get());
+        this.dropSelf(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get());
+        this.dropSelf(MCPlusBlocks.SLATE_PILLAR_BASE.get());
 
         //MARBLE
         this.add(MCPlusBlocks.MARBLE.get(), block -> createSingleItemTableWithSilkTouch(MCPlusBlocks.MARBLE.get(), MCPlusBlocks.COBBLED_MARBLE.get()));
@@ -70,6 +74,21 @@ public class MCPlusLootTables extends BlockLootSubProvider {
         this.dropSelf(MCPlusBlocks.LIMESTONE.get());
         //CHERT
         this.dropSelf(MCPlusBlocks.CHERT.get());
+        //this.dropSelf(MCPlusBlocks.COBBLED_SLATE.get());
+       // this.dropSelf(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE.get());
+        this.dropSelf(MCPlusBlocks.CHERT_BRICKS.get());
+        this.dropSelf(MCPlusBlocks.CRACKED_CHERT_BRICKS.get());
+        this.dropSelf(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS.get());
+        this.dropSelf(MCPlusBlocks.POLISHED_CHERT.get());
+        this.dropSelf(MCPlusBlocks.CHISELED_CHERT.get());
+        this.dropSelf(MCPlusBlocks.CHERT_TILES.get());
+        this.dropSelf(MCPlusBlocks.CRACKED_CHERT_TILES.get());
+        this.dropSelf(MCPlusBlocks.CRYSTALLINE_CHERT_TILES.get());
+        this.dropSelf(MCPlusBlocks.SMOOTH_CHERT.get());
+        this.add(MCPlusBlocks.SMOOTH_CHERT_SLAB.get(), block -> createSlabItemTable(MCPlusBlocks.SMOOTH_CHERT_SLAB.get()));
+      //  this.dropSelf(MCPlusBlocks.SLATE_PILLAR.get());
+       // this.dropSelf(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get());
+       // this.dropSelf(MCPlusBlocks.SLATE_PILLAR_BASE.get());
 
     }
 
