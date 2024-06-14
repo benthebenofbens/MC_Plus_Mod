@@ -2,6 +2,8 @@ package com.btbob.mcplus.datagen;
 
 import com.btbob.mcplus.MCPlus;
 import com.btbob.mcplus.blocks.MCPlusBlocks;
+import com.btbob.mcplus.blocks.NatureBlocks;
+import com.btbob.mcplus.items.MCPlusItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -43,11 +45,102 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
 
     @Override
     protected void registerModels() {
+        wallItem(MCPlusBlocks.GNEISS_WALL, MCPlusBlocks.GNEISS);
+        evenSimplerBlockItem(MCPlusBlocks.GNEISS_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.GNEISS_STAIRS);
+        wallItem(MCPlusBlocks.COBBLED_GNEISS_WALL, MCPlusBlocks.COBBLED_GNEISS);
+        evenSimplerBlockItem(MCPlusBlocks.COBBLED_GNEISS_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.COBBLED_GNEISS_STAIRS);
+        wallItem(MCPlusBlocks.ENERGIZED_COBBLED_GNEISS_WALL, MCPlusBlocks.ENERGIZED_COBBLED_GNEISS);
+        evenSimplerBlockItem(MCPlusBlocks.ENERGIZED_COBBLED_GNEISS_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.ENERGIZED_COBBLED_GNEISS_STAIRS);
+        wallItem(MCPlusBlocks.GNEISS_BRICK_WALL, MCPlusBlocks.GNEISS_BRICKS);
+        evenSimplerBlockItem(MCPlusBlocks.GNEISS_BRICK_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.GNEISS_BRICK_STAIRS);
+        wallItem(MCPlusBlocks.CRACKED_GNEISS_BRICK_WALL, MCPlusBlocks.CRACKED_GNEISS_BRICKS);
+        evenSimplerBlockItem(MCPlusBlocks.CRACKED_GNEISS_BRICK_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.CRACKED_GNEISS_BRICK_STAIRS);
+        wallItem(MCPlusBlocks.ENERGIZED_GNEISS_BRICK_WALL, MCPlusBlocks.ENERGIZED_GNEISS_BRICKS);
+        evenSimplerBlockItem(MCPlusBlocks.ENERGIZED_GNEISS_BRICK_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.ENERGIZED_GNEISS_BRICK_STAIRS);
+        wallItem(MCPlusBlocks.GNEISS_TILE_WALL, MCPlusBlocks.GNEISS_TILES);
+        evenSimplerBlockItem(MCPlusBlocks.GNEISS_TILE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.GNEISS_TILE_STAIRS);
+        wallItem(MCPlusBlocks.CRACKED_GNEISS_TILE_WALL, MCPlusBlocks.CRACKED_GNEISS_TILES);
+        evenSimplerBlockItem(MCPlusBlocks.CRACKED_GNEISS_TILE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.CRACKED_GNEISS_TILE_STAIRS);
+        wallItem(MCPlusBlocks.ENERGIZED_GNEISS_TILE_WALL, MCPlusBlocks.ENERGIZED_GNEISS_TILES);
+        evenSimplerBlockItem(MCPlusBlocks.ENERGIZED_GNEISS_TILE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.ENERGIZED_GNEISS_TILE_STAIRS);
+        wallItem(MCPlusBlocks.POLISHED_GNEISS_WALL, MCPlusBlocks.POLISHED_GNEISS);
+        evenSimplerBlockItem(MCPlusBlocks.POLISHED_GNEISS_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.POLISHED_GNEISS_STAIRS);
+        wallItem(MCPlusBlocks.SMOOTH_GNEISS_WALL, MCPlusBlocks.SMOOTH_GNEISS);
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_GNEISS_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.SMOOTH_GNEISS_STAIRS);
+
+        //SLATE
+        wallItem(MCPlusBlocks.SLATE_WALL, MCPlusBlocks.SLATE);
+        evenSimplerBlockItem(MCPlusBlocks.SLATE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.SLATE_STAIRS);
+        wallItem(MCPlusBlocks.COBBLED_SLATE_WALL, MCPlusBlocks.COBBLED_SLATE);
+        evenSimplerBlockItem(MCPlusBlocks.COBBLED_SLATE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.COBBLED_SLATE_STAIRS);
+        wallItem(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE_WALL, MCPlusBlocks.BEDAZZLED_COBBLED_SLATE);
+        evenSimplerBlockItem(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE_STAIRS);
+        wallItem(MCPlusBlocks.SLATE_BRICK_WALL, MCPlusBlocks.SLATE_BRICKS);
+        evenSimplerBlockItem(MCPlusBlocks.SLATE_BRICK_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.SLATE_BRICK_STAIRS);
+        wallItem(MCPlusBlocks.CRACKED_SLATE_BRICK_WALL, MCPlusBlocks.CRACKED_SLATE_BRICKS);
+        evenSimplerBlockItem(MCPlusBlocks.CRACKED_SLATE_BRICK_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.CRACKED_SLATE_BRICK_STAIRS);
+        wallItem(MCPlusBlocks.BEDAZZLED_SLATE_BRICK_WALL, MCPlusBlocks.BEDAZZLED_SLATE_BRICKS);
+        evenSimplerBlockItem(MCPlusBlocks.BEDAZZLED_SLATE_BRICK_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.BEDAZZLED_SLATE_BRICK_STAIRS);
+        wallItem(MCPlusBlocks.SLATE_TILE_WALL, MCPlusBlocks.SLATE_TILES);
+        evenSimplerBlockItem(MCPlusBlocks.SLATE_TILE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.SLATE_TILE_STAIRS);
+        wallItem(MCPlusBlocks.CRACKED_SLATE_TILE_WALL, MCPlusBlocks.CRACKED_SLATE_TILES);
+        evenSimplerBlockItem(MCPlusBlocks.CRACKED_SLATE_TILE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.CRACKED_SLATE_TILE_STAIRS);
+        wallItem(MCPlusBlocks.BEDAZZLED_SLATE_TILE_WALL, MCPlusBlocks.BEDAZZLED_SLATE_TILES);
+        evenSimplerBlockItem(MCPlusBlocks.BEDAZZLED_SLATE_TILE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.BEDAZZLED_SLATE_TILE_STAIRS);
+        wallItem(MCPlusBlocks.POLISHED_SLATE_WALL, MCPlusBlocks.POLISHED_SLATE);
+        evenSimplerBlockItem(MCPlusBlocks.POLISHED_SLATE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.POLISHED_SLATE_STAIRS);
+        wallItem(MCPlusBlocks.SMOOTH_SLATE_WALL, MCPlusBlocks.SMOOTH_SLATE);
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_SLATE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.SMOOTH_SLATE_STAIRS);
+
+
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_MARBLE_SLAB);
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_CHERT_SLAB);
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_LIMESTONE_SLAB);
+        evenSimplerBlockItem(MCPlusBlocks.SMOOTH_GABBRO_SLAB);
+
+        //MUSHROOMS
+        simpleBlockItemBlockTexture(NatureBlocks.GIANT_PUFFBALL);
+        simpleBlockItemBlockTexture(NatureBlocks.INDIGO_MILKCAP);
+        simpleItem(MCPlusItems.INDIGO_MILKCAP_SPORES);
+
+        simpleBlockItemBlockTexture(NatureBlocks.DESERT_SHAGGY_MANE);
+        simpleBlockItemBlockTexture(NatureBlocks.PORTABELLA);
+        simpleBlockItemBlockTexture(NatureBlocks.SANDY_STILTBALL);
+        simpleBlockItemBlockTexture(NatureBlocks.FIRE_CORAL);
+        simpleBlockItemBlockTexture(NatureBlocks.GLOWING_MUSHROOMS);
+        simpleBlockItemBlockTexture(NatureBlocks.YELLOW_PARASOLS);
+        simpleBlockItemBlockTexture(NatureBlocks.BLACK_TRUFFLE);
+        simpleBlockItemBlockTexture(NatureBlocks.LILAC_BONNETS);
+        simpleBlockItemBlockTexture(NatureBlocks.BASKET_STINKHORN);
+        simpleBlockItemBlockTexture(NatureBlocks.DEATH_CAP);
+        simpleBlockItemBlockTexture(NatureBlocks.DESTROYING_ANGEL);
+        simpleBlockItemBlockTexture(NatureBlocks.EARTHBALL);
+        simpleBlockItemBlockTexture(NatureBlocks.FALSE_DEATH_CAP);
+        simpleBlockItemBlockTexture(NatureBlocks.GRAY_MOREL);
+        simpleBlockItemBlockTexture(NatureBlocks.INKY_CAP);
+
 
     }
 
