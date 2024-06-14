@@ -70,12 +70,42 @@ public class MCPlusLootTables extends BlockLootSubProvider {
         this.dropSelf(MCPlusBlocks.MARBLE_PILLAR_BASE.get());
         // GABBRO
         this.dropSelf(MCPlusBlocks.GABBRO.get());
+        //this.dropSelf(MCPlusBlocks.COBBLED_SLATE.get());
+        // this.dropSelf(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE.get());
+        this.dropSelf(MCPlusBlocks.GABBRO_BRICKS.get());
+        this.dropSelf(MCPlusBlocks.CRACKED_GABBRO_BRICKS.get());
+       // this.dropSelf(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS.get());
+        this.dropSelf(MCPlusBlocks.POLISHED_GABBRO.get());
+        this.dropSelf(MCPlusBlocks.CHISELED_GABBRO.get());
+        this.dropSelf(MCPlusBlocks.GABBRO_TILES.get());
+      //  this.dropSelf(MCPlusBlocks.CRACKED_CHERT_TILES.get());
+      //  this.dropSelf(MCPlusBlocks.CRYSTALLINE_CHERT_TILES.get());
+       // this.dropSelf(MCPlusBlocks.SMOOTH_CHERT.get());
+       // this.add(MCPlusBlocks.SMOOTH_CHERT_SLAB.get(), block -> createSlabItemTable(MCPlusBlocks.SMOOTH_CHERT_SLAB.get()));
+        //  this.dropSelf(MCPlusBlocks.SLATE_PILLAR.get());
+        // this.dropSelf(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get());
+        // this.dropSelf(MCPlusBlocks.SLATE_PILLAR_BASE.get());
         //LIMESTONE
         this.dropSelf(MCPlusBlocks.LIMESTONE.get());
+        this.dropSelf(MCPlusBlocks.COBBLED_LIMESTONE.get());
+        this.dropSelf(MCPlusBlocks.LICHENY_COBBLED_LIMESTONE.get());
+        this.dropSelf(MCPlusBlocks.LIMESTONE_BRICKS.get());
+        this.dropSelf(MCPlusBlocks.CRACKED_LIMESTONE_BRICKS.get());
+        this.dropSelf(MCPlusBlocks.LICHENY_LIMESTONE_BRICKS.get());
+        this.dropSelf(MCPlusBlocks.POLISHED_LIMESTONE.get());
+        this.dropSelf(MCPlusBlocks.CHISELED_LIMESTONE.get());
+        this.dropSelf(MCPlusBlocks.LIMESTONE_TILES.get());
+        this.dropSelf(MCPlusBlocks.CRACKED_LIMESTONE_TILES.get());
+        this.dropSelf(MCPlusBlocks.LICHENY_LIMESTONE_TILES.get());
+        this.dropSelf(MCPlusBlocks.SMOOTH_LIMESTONE.get());
+        this.add(MCPlusBlocks.SMOOTH_LIMESTONE_SLAB.get(), block -> createSlabItemTable(MCPlusBlocks.SMOOTH_LIMESTONE_SLAB.get()));
+        this.dropSelf(MCPlusBlocks.LIMESTONE_PILLAR.get());
+        this.dropSelf(MCPlusBlocks.LIMESTONE_PILLAR_CAPITAL.get());
+        this.dropSelf(MCPlusBlocks.LIMESTONE_PILLAR_BASE.get());
         //CHERT
         this.dropSelf(MCPlusBlocks.CHERT.get());
-        //this.dropSelf(MCPlusBlocks.COBBLED_SLATE.get());
-       // this.dropSelf(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE.get());
+        this.dropSelf(MCPlusBlocks.COBBLED_CHERT.get());
+        this.dropSelf(MCPlusBlocks.CRYSTALLINE_COBBLED_CHERT.get());
         this.dropSelf(MCPlusBlocks.CHERT_BRICKS.get());
         this.dropSelf(MCPlusBlocks.CRACKED_CHERT_BRICKS.get());
         this.dropSelf(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS.get());

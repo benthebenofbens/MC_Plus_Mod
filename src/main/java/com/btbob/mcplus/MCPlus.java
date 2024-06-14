@@ -2,6 +2,7 @@ package com.btbob.mcplus;
 
 import com.btbob.mcplus.blocks.MCPlusBlocks;
 import com.btbob.mcplus.items.MCPlusItems;
+import com.btbob.mcplus.util.MCPlusCreativeMenu;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;

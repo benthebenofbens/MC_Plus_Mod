@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcplus:block/smooth_limestone_slab"
+    },
+    "type=double": {
+      "model": "mcplus:block/smooth_limestone_slab_block"
+    },
+    "type=top": {
+      "model": "mcplus:block/smooth_limestone_slab_top"
+    }
+  }
+}

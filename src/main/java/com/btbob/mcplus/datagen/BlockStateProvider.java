@@ -75,8 +75,8 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
         blockItem(MCPlusBlocks.SLATE_PILLAR_BASE);
         //CHERT
         blockWithItem(MCPlusBlocks.CHERT);
-      //  blockWithItem(MCPlusBlocks.COBBLED_SLATE);
-      //  blockWithItem(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE);
+        blockWithItem(MCPlusBlocks.COBBLED_CHERT);
+        blockWithItem(MCPlusBlocks.CRYSTALLINE_COBBLED_CHERT);
         blockWithItem(MCPlusBlocks.CHERT_BRICKS);
         blockWithItem(MCPlusBlocks.CRACKED_CHERT_BRICKS);
         blockWithItem(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS);
@@ -94,8 +94,42 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
       //  blockItem(MCPlusBlocks.SLATE_PILLAR_BASE);
         //LIMESTONE
         blockWithItem(MCPlusBlocks.LIMESTONE);
+        blockWithItem(MCPlusBlocks.COBBLED_LIMESTONE);
+        blockWithItem(MCPlusBlocks.LICHENY_COBBLED_LIMESTONE);
+        blockWithItem(MCPlusBlocks.LIMESTONE_BRICKS);
+        blockWithItem(MCPlusBlocks.CRACKED_LIMESTONE_BRICKS);
+        blockWithItem(MCPlusBlocks.LICHENY_LIMESTONE_BRICKS);
+        blockWithItem(MCPlusBlocks.POLISHED_LIMESTONE);
+        blockWithItem(MCPlusBlocks.CHISELED_LIMESTONE);
+        blockWithItem(MCPlusBlocks.LIMESTONE_TILES);
+        blockWithItem(MCPlusBlocks.CRACKED_LIMESTONE_TILES);
+        blockWithItem(MCPlusBlocks.LICHENY_LIMESTONE_TILES);
+        blockWithItem(MCPlusBlocks.SMOOTH_LIMESTONE);
+        axisBlock(((RotatedPillarBlock) MCPlusBlocks.LIMESTONE_PILLAR.get()), blockTexture(MCPlusBlocks.LIMESTONE_PILLAR.get()), new ResourceLocation(MCPlus.MODID, "block/limestone_pillar_top"));
+        blockItem(MCPlusBlocks.LIMESTONE_PILLAR);
+        axisBlock(((RotatedPillarBlock) MCPlusBlocks.LIMESTONE_PILLAR_CAPITAL.get()), blockTexture(MCPlusBlocks.LIMESTONE_PILLAR_CAPITAL.get()), new ResourceLocation(MCPlus.MODID, "block/limestone_pillar_top"));
+        blockItem(MCPlusBlocks.LIMESTONE_PILLAR_CAPITAL);
+        axisBlock(((RotatedPillarBlock) MCPlusBlocks.LIMESTONE_PILLAR_BASE.get()), blockTexture(MCPlusBlocks.LIMESTONE_PILLAR_BASE.get()), new ResourceLocation(MCPlus.MODID, "block/limestone_pillar_top"));
+        blockItem(MCPlusBlocks.LIMESTONE_PILLAR_BASE);
         //GABBRO
         blockWithItem(MCPlusBlocks.GABBRO);
+        //  blockWithItem(MCPlusBlocks.COBBLED_SLATE);
+        //  blockWithItem(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE);
+        blockWithItem(MCPlusBlocks.GABBRO_BRICKS);
+        blockWithItem(MCPlusBlocks.CRACKED_GABBRO_BRICKS);
+       // blockWithItem(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS);
+        blockWithItem(MCPlusBlocks.POLISHED_GABBRO);
+        blockWithItem(MCPlusBlocks.CHISELED_GABBRO);
+        blockWithItem(MCPlusBlocks.GABBRO_TILES);
+      //  blockWithItem(MCPlusBlocks.CRACKED_CHERT_TILES);
+      //  blockWithItem(MCPlusBlocks.CRYSTALLINE_CHERT_TILES);
+       // blockWithItem(MCPlusBlocks.SMOOTH_CHERT);
+        //  axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
+        // blockItem(MCPlusBlocks.SLATE_PILLAR);
+        //  axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR_CAPITAL.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
+        //  blockItem(MCPlusBlocks.SLATE_PILLAR_CAPITAL);
+        //  axisBlock(((RotatedPillarBlock) MCPlusBlocks.SLATE_PILLAR_BASE.get()), blockTexture(MCPlusBlocks.SLATE_PILLAR_BASE.get()), new ResourceLocation(MCPlus.MODID, "block/slate_pillar_top"));
+        //  blockItem(MCPlusBlocks.SLATE_PILLAR_BASE);
     }
 
 

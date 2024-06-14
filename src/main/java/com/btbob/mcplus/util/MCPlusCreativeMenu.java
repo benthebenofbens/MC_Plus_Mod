@@ -1,5 +1,6 @@
-package com.btbob.mcplus;
+package com.btbob.mcplus.util;
 
+import com.btbob.mcplus.MCPlus;
 import com.btbob.mcplus.blocks.MCPlusBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -71,12 +72,42 @@ public class MCPlusCreativeMenu {
                         pOutput.accept(MCPlusBlocks.SLATE_PILLAR_BASE.get());
                         //LIMESTONE
                         pOutput.accept(MCPlusBlocks.LIMESTONE.get());
+                        pOutput.accept(MCPlusBlocks.COBBLED_LIMESTONE.get());
+                        pOutput.accept(MCPlusBlocks.LICHENY_COBBLED_LIMESTONE.get());
+                        pOutput.accept(MCPlusBlocks.LIMESTONE_BRICKS.get());
+                        pOutput.accept(MCPlusBlocks.CRACKED_LIMESTONE_BRICKS.get());
+                        pOutput.accept(MCPlusBlocks.LICHENY_LIMESTONE_BRICKS.get());
+                        pOutput.accept(MCPlusBlocks.POLISHED_LIMESTONE.get());
+                        pOutput.accept(MCPlusBlocks.CHISELED_LIMESTONE.get());
+                        pOutput.accept(MCPlusBlocks.SMOOTH_LIMESTONE.get());
+                        pOutput.accept(MCPlusBlocks.SMOOTH_LIMESTONE_SLAB.get());
+                        pOutput.accept(MCPlusBlocks.LIMESTONE_TILES.get());
+                        pOutput.accept(MCPlusBlocks.CRACKED_LIMESTONE_TILES.get());
+                        pOutput.accept(MCPlusBlocks.LICHENY_LIMESTONE_TILES.get());
+                        pOutput.accept(MCPlusBlocks.LIMESTONE_PILLAR_CAPITAL.get());
+                        pOutput.accept(MCPlusBlocks.LIMESTONE_PILLAR.get());
+                        pOutput.accept(MCPlusBlocks.LIMESTONE_PILLAR_BASE.get());
                         //GABBRO
                         pOutput.accept(MCPlusBlocks.GABBRO.get());
+                        //   pOutput.accept(MCPlusBlocks.COBBLED_SLATE.get());
+                        //  pOutput.accept(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE.get());
+                        pOutput.accept(MCPlusBlocks.GABBRO_BRICKS.get());
+                        pOutput.accept(MCPlusBlocks.CRACKED_GABBRO_BRICKS.get());
+                       // pOutput.accept(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS.get());
+                        pOutput.accept(MCPlusBlocks.POLISHED_GABBRO.get());
+                        pOutput.accept(MCPlusBlocks.CHISELED_GABBRO.get());
+                       // pOutput.accept(MCPlusBlocks.SMOOTH_CHERT.get());
+                       // pOutput.accept(MCPlusBlocks.SMOOTH_CHERT_SLAB.get());
+                        pOutput.accept(MCPlusBlocks.GABBRO_TILES.get());
+                      //  pOutput.accept(MCPlusBlocks.CRACKED_CHERT_TILES.get());
+                      //  pOutput.accept(MCPlusBlocks.CRYSTALLINE_CHERT_TILES.get());
+                        //   pOutput.accept(MCPlusBlocks.SLATE_PILLAR_CAPITAL.get());
+                        //   pOutput.accept(MCPlusBlocks.SLATE_PILLAR.get());
+                        //  pOutput.accept(MCPlusBlocks.SLATE_PILLAR_BASE.get());
                         //CHERT
                         pOutput.accept(MCPlusBlocks.CHERT.get());
-                     //   pOutput.accept(MCPlusBlocks.COBBLED_SLATE.get());
-                      //  pOutput.accept(MCPlusBlocks.BEDAZZLED_COBBLED_SLATE.get());
+                        pOutput.accept(MCPlusBlocks.COBBLED_CHERT.get());
+                        pOutput.accept(MCPlusBlocks.CRYSTALLINE_COBBLED_CHERT.get());
                         pOutput.accept(MCPlusBlocks.CHERT_BRICKS.get());
                         pOutput.accept(MCPlusBlocks.CRACKED_CHERT_BRICKS.get());
                         pOutput.accept(MCPlusBlocks.CRYSTALLINE_CHERT_BRICKS.get());
