@@ -1,0 +1,9 @@
+{
+  "parent": "mcplus:block/shelf_mushrooms",
+  "render_type": "minecraft:cutout",
+
+  "textures": {
+    "0": "mcplus:block/chicken_of_the_woods_stage_4",
+    "particle": "mcplus:block/chicken_of_the_woods_stage_4"
+  }
+}

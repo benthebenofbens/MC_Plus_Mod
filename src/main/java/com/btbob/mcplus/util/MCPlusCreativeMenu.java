@@ -192,30 +192,26 @@ public class MCPlusCreativeMenu {
                     .build());
 
     public static final RegistryObject<CreativeModeTab> MC_PLUS_NATURE_TAB = CREATIVE_MODE_TABS.register("mc_plus_nature_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(NatureBlocks.INDIGO_MILKCAP.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(NatureBlocks.MUSHROOM_GROWING_BOX.get()))
                     .title(Component.translatable("creativetab.mc_plus_nature_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(NatureBlocks.MUSHROOM_GROWING_BOX.get());
-                        pOutput.accept(NatureBlocks.DESTROYING_ANGEL.get());
-                        pOutput.accept(NatureBlocks.GIANT_PUFFBALL.get());
-                        pOutput.accept(NatureBlocks.GRAY_MOREL.get());
-                        pOutput.accept(NatureBlocks.BLACK_TRUFFLE.get());
-                        pOutput.accept(NatureBlocks.FALSE_DEATH_CAP.get());
-                        pOutput.accept(NatureBlocks.SANDY_STILTBALL.get());
-                        pOutput.accept(Blocks.BROWN_MUSHROOM);
-                        pOutput.accept(NatureBlocks.PORTABELLA.get());
-                        pOutput.accept(Blocks.RED_MUSHROOM);
-                        pOutput.accept(NatureBlocks.BASKET_STINKHORN.get());
+
+                        pOutput.accept(MCPlusItems.CHICKEN_OF_THE_WOODS_SPORES.get());
+                        pOutput.accept(NatureBlocks.CHICKEN_OF_THE_WOODS.get());
+                        pOutput.accept(NatureBlocks.WOODY_CHICKEN_OF_THE_WOODS.get());
+
+                        pOutput.accept(MCPlusItems.FIRE_CORAL_SPORES.get());
                         pOutput.accept(NatureBlocks.FIRE_CORAL.get());
-                        pOutput.accept(NatureBlocks.EARTHBALL.get());
-                        pOutput.accept(NatureBlocks.DESERT_SHAGGY_MANE.get());
-                        pOutput.accept(NatureBlocks.YELLOW_PARASOLS.get());
-                        pOutput.accept(NatureBlocks.GLOWING_MUSHROOMS.get());
-                        pOutput.accept(NatureBlocks.DEATH_CAP.get());
-                        pOutput.accept(NatureBlocks.INDIGO_MILKCAP.get());
+
+                        pOutput.accept(Blocks.BROWN_MUSHROOM);
+                        pOutput.accept(Blocks.RED_MUSHROOM);
+                        pOutput.accept(NatureBlocks.AFUNGUS.get());
+                        pOutput.accept(NatureBlocks.DEADLY_AFUNGUS.get());
+
+
                         pOutput.accept(MCPlusItems.INDIGO_MILKCAP_SPORES.get());
-                        pOutput.accept(NatureBlocks.INKY_CAP.get());
-                        pOutput.accept(NatureBlocks.LILAC_BONNETS.get());
+
 
                     })
                     .build());

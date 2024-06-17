@@ -121,26 +121,15 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_GABBRO_SLAB);
 
         //MUSHROOMS
-        simpleBlockItemBlockTexture(NatureBlocks.GIANT_PUFFBALL);
-        simpleBlockItemBlockTexture(NatureBlocks.INDIGO_MILKCAP);
+
         simpleItem(MCPlusItems.INDIGO_MILKCAP_SPORES);
-
-        simpleBlockItemBlockTexture(NatureBlocks.DESERT_SHAGGY_MANE);
-        simpleBlockItemBlockTexture(NatureBlocks.PORTABELLA);
-        simpleBlockItemBlockTexture(NatureBlocks.SANDY_STILTBALL);
+        simpleItem(MCPlusItems.CHICKEN_OF_THE_WOODS_SPORES);
+        simpleItem(MCPlusItems.FIRE_CORAL_SPORES);
+        simpleBlockItemBlockTexture(NatureBlocks.CHICKEN_OF_THE_WOODS);
+        simpleBlockItemBlockTexture(NatureBlocks.WOODY_CHICKEN_OF_THE_WOODS);
         simpleBlockItemBlockTexture(NatureBlocks.FIRE_CORAL);
-        simpleBlockItemBlockTexture(NatureBlocks.GLOWING_MUSHROOMS);
-        simpleBlockItemBlockTexture(NatureBlocks.YELLOW_PARASOLS);
-        simpleBlockItemBlockTexture(NatureBlocks.BLACK_TRUFFLE);
-        simpleBlockItemBlockTexture(NatureBlocks.LILAC_BONNETS);
-        simpleBlockItemBlockTexture(NatureBlocks.BASKET_STINKHORN);
-        simpleBlockItemBlockTexture(NatureBlocks.DEATH_CAP);
-        simpleBlockItemBlockTexture(NatureBlocks.DESTROYING_ANGEL);
-        simpleBlockItemBlockTexture(NatureBlocks.EARTHBALL);
-        simpleBlockItemBlockTexture(NatureBlocks.FALSE_DEATH_CAP);
-        simpleBlockItemBlockTexture(NatureBlocks.GRAY_MOREL);
-        simpleBlockItemBlockTexture(NatureBlocks.INKY_CAP);
-
+        simpleBlockItemBlockTexture(NatureBlocks.AFUNGUS);
+        simpleBlockItemBlockTexture(NatureBlocks.DEADLY_AFUNGUS);
 
     }
 

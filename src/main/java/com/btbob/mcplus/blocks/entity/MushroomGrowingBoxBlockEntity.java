@@ -42,7 +42,8 @@ public class MushroomGrowingBoxBlockEntity extends BlockEntity implements MenuPr
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 78;
+    private int maxProgress = 4 * 250;
+    private boolean growing = false;
 
     public MushroomGrowingBoxBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.MUSHROOM_GROWING_BE.get(), pPos, pBlockState);
@@ -146,11 +147,13 @@ public class MushroomGrowingBoxBlockEntity extends BlockEntity implements MenuPr
     }
 
     private void beginGrowing() {
-        ItemStack result = new ItemStack(NatureBlocks.INDIGO_MILKCAP.get(), 1);
-
+        ItemStack result = new ItemStack(NatureBlocks.CHICKEN_OF_THE_WOODS.get(), 1);
+        this.itemHandler.extractItem(MUSHROOM_INPUT_SLOT, 1, false);
+        this.itemHandler.extractItem(FIRST_RESOURCE_INPUT_SLOT, 1, false);
+        this.itemHandler.extractItem(SECOND_RESOURCE_INPUT_SLOT, 1, false);
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(), this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
-
     }
+
 
     private boolean hasProgressFinished() {
         return progress >= maxProgress;
@@ -165,7 +168,7 @@ public class MushroomGrowingBoxBlockEntity extends BlockEntity implements MenuPr
         boolean hasBaseItem = this.itemHandler.getStackInSlot(BASE_INPUT_SLOT).getItem() == Blocks.OAK_WOOD.asItem();
         boolean hasFirstItem = this.itemHandler.getStackInSlot(FIRST_RESOURCE_INPUT_SLOT).getItem() == Items.WHEAT;
         boolean hasSecondItem = this.itemHandler.getStackInSlot(SECOND_RESOURCE_INPUT_SLOT).getItem() == Items.WHEAT;
-        ItemStack result = new ItemStack(NatureBlocks.INDIGO_MILKCAP.get());
+        ItemStack result = new ItemStack(NatureBlocks.CHICKEN_OF_THE_WOODS.get());
 
         return hasSporeItem && hasBaseItem &&hasFirstItem && hasSecondItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
     }

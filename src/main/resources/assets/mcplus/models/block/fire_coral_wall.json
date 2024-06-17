@@ -1,0 +1,9 @@
+{
+  "parent": "mcplus:block/bunch_mushrooms",
+  "render_type": "minecraft:cutout",
+
+  "textures": {
+    "0": "mcplus:block/fire_coral_wall_stage_3",
+    "particle": "mcplus:block/fire_coral_wall_stage_3"
+  }
+}

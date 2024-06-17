@@ -200,40 +200,10 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
         //MUSHROOMS
         //MUSHROOM BLOCKS
         blockWithItem(NatureBlocks.MUSHROOM_GROWING_BOX);
-        simpleBlockWithItem(NatureBlocks.GIANT_PUFFBALL.get(), models().cross(blockTexture(NatureBlocks.GIANT_PUFFBALL.get()).getPath(), blockTexture(NatureBlocks.GIANT_PUFFBALL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_GIANT_PUFFBALL.get(), models().singleTexture("potted_giant_puffball", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.GIANT_PUFFBALL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.INDIGO_MILKCAP.get(), models().cross(blockTexture(NatureBlocks.INDIGO_MILKCAP.get()).getPath(), blockTexture(NatureBlocks.INDIGO_MILKCAP.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_INDIGO_MILKCAP.get(), models().singleTexture("potted_indigo_milkcap", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.INDIGO_MILKCAP.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.GRAY_MOREL.get(), models().cross(blockTexture(NatureBlocks.GRAY_MOREL.get()).getPath(), blockTexture(NatureBlocks.GRAY_MOREL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_GRAY_MOREL.get(), models().singleTexture("potted_gray_morel", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.GRAY_MOREL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.INKY_CAP.get(), models().cross(blockTexture(NatureBlocks.INKY_CAP.get()).getPath(), blockTexture(NatureBlocks.INKY_CAP.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_INKY_CAP.get(), models().singleTexture("potted_inky_cap", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.INKY_CAP.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.DESERT_SHAGGY_MANE.get(), models().cross(blockTexture(NatureBlocks.DESERT_SHAGGY_MANE.get()).getPath(), blockTexture(NatureBlocks.DESERT_SHAGGY_MANE.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_DESERT_SHAGGY_MANE.get(), models().singleTexture("potted_desert_shaggy_mane", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.DESERT_SHAGGY_MANE.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.PORTABELLA.get(), models().cross(blockTexture(NatureBlocks.PORTABELLA.get()).getPath(), blockTexture(NatureBlocks.PORTABELLA.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_PORTABELLA.get(), models().singleTexture("potted_portabella", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.PORTABELLA.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.SANDY_STILTBALL.get(), models().cross(blockTexture(NatureBlocks.SANDY_STILTBALL.get()).getPath(), blockTexture(NatureBlocks.SANDY_STILTBALL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_SANDY_STILTBALL.get(), models().singleTexture("potted_sandy_stiltball", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.SANDY_STILTBALL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.BLACK_TRUFFLE.get(), models().cross(blockTexture(NatureBlocks.BLACK_TRUFFLE.get()).getPath(), blockTexture(NatureBlocks.BLACK_TRUFFLE.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_BLACK_TRUFFLE.get(), models().singleTexture("potted_black_truffle", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.BLACK_TRUFFLE.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.LILAC_BONNETS.get(), models().cross(blockTexture(NatureBlocks.LILAC_BONNETS.get()).getPath(), blockTexture(NatureBlocks.LILAC_BONNETS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_LILAC_BONNETS.get(), models().singleTexture("potted_lilac_bonnets", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.LILAC_BONNETS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.BASKET_STINKHORN.get(), models().cross(blockTexture(NatureBlocks.BASKET_STINKHORN.get()).getPath(), blockTexture(NatureBlocks.BASKET_STINKHORN.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_BASKET_STINKHORN.get(), models().singleTexture("potted_basket_stinkhorn", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.BASKET_STINKHORN.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.FIRE_CORAL.get(), models().cross(blockTexture(NatureBlocks.FIRE_CORAL.get()).getPath(), blockTexture(NatureBlocks.FIRE_CORAL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_FIRE_CORAL.get(), models().singleTexture("potted_fire_coral", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.FIRE_CORAL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.GLOWING_MUSHROOMS.get(), models().cross(blockTexture(NatureBlocks.GLOWING_MUSHROOMS.get()).getPath(), blockTexture(NatureBlocks.GLOWING_MUSHROOMS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_GLOWING_MUSHROOMS.get(), models().singleTexture("potted_glowing_mushrooms", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.GLOWING_MUSHROOMS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.YELLOW_PARASOLS.get(), models().cross(blockTexture(NatureBlocks.YELLOW_PARASOLS.get()).getPath(), blockTexture(NatureBlocks.YELLOW_PARASOLS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_YELLOW_PARASOLS.get(), models().singleTexture("potted_yellow_parasols", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.YELLOW_PARASOLS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.DEATH_CAP.get(), models().cross(blockTexture(NatureBlocks.DEATH_CAP.get()).getPath(), blockTexture(NatureBlocks.DEATH_CAP.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_DEATH_CAP.get(), models().singleTexture("potted_death_cap", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.DEATH_CAP.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.FALSE_DEATH_CAP.get(), models().cross(blockTexture(NatureBlocks.FALSE_DEATH_CAP.get()).getPath(), blockTexture(NatureBlocks.FALSE_DEATH_CAP.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_FALSE_DEATH_CAP.get(), models().singleTexture("potted_false_death_cap", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.FALSE_DEATH_CAP.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.DESTROYING_ANGEL.get(), models().cross(blockTexture(NatureBlocks.DESTROYING_ANGEL.get()).getPath(), blockTexture(NatureBlocks.DESTROYING_ANGEL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_DESTROYING_ANGEL.get(), models().singleTexture("potted_destroying_angel", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.DESTROYING_ANGEL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.EARTHBALL.get(), models().cross(blockTexture(NatureBlocks.EARTHBALL.get()).getPath(), blockTexture(NatureBlocks.EARTHBALL.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_EARTHBALL.get(), models().singleTexture("potted_earthball", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.EARTHBALL.get())).renderType("cutout"));
+        simpleBlockWithItem(NatureBlocks.AFUNGUS.get(), models().cross(blockTexture(NatureBlocks.AFUNGUS.get()).getPath(), blockTexture(NatureBlocks.AFUNGUS.get())).renderType("cutout"));
+        simpleBlockWithItem(NatureBlocks.POTTED_AFUNGUS.get(), models().singleTexture("potted_afungus", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.AFUNGUS.get())).renderType("cutout"));
+        simpleBlockWithItem(NatureBlocks.DEADLY_AFUNGUS.get(), models().cross(blockTexture(NatureBlocks.DEADLY_AFUNGUS.get()).getPath(), blockTexture(NatureBlocks.DEADLY_AFUNGUS.get())).renderType("cutout"));
+        simpleBlockWithItem(NatureBlocks.POTTED_DEADLY_AFUNGUS.get(), models().singleTexture("potted_deadly_afungus", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.DEADLY_AFUNGUS.get())).renderType("cutout"));
 
 
     }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=south": { "model": "mcplus:block/fire_coral_wall" },
+    "facing=west": { "model": "mcplus:block/fire_coral_wall", "y": 90 },
+    "facing=north": { "model": "mcplus:block/fire_coral_wall", "y": 180 },
+    "facing=east": { "model": "mcplus:block/fire_coral_wall", "y": 270 },
+    "facing=down": { "model": "mcplus:block/fire_coral" },
+    "facing=up": { "model": "mcplus:block/fire_coral" }
+  }
+}

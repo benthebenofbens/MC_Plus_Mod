@@ -19,8 +19,8 @@ public class MushroomGrowingBoxScreen extends AbstractContainerScreen<MushroomGr
     @Override
     protected void init() {
         super.init();
-        this.inventoryLabelY = 50;
-        this.titleLabelY = 20;
+        this.inventoryLabelY = 72;
+        this.titleLabelY = 5;
     }
 
     @Override
@@ -28,17 +28,17 @@ public class MushroomGrowingBoxScreen extends AbstractContainerScreen<MushroomGr
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0F,1.0F,1.0F,1.0F);
         RenderSystem.setShaderTexture(0,TEXTURE);
-        int x = (width - imageWidth) /2;
-        int y = (width - imageWidth) /2;
+        int x = (this.width - this.imageWidth) /2;
+        int y = (this.height - this.imageHeight) /2;
 
-        pGuiGraphics.blit(TEXTURE,x,y,0,-50,imageWidth,imageHeight);
+        pGuiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
         renderMyceliumGrowth(pGuiGraphics,x,y);
     }
 
     private void renderMyceliumGrowth(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isGrowing()) {
-            guiGraphics.blit(TEXTURE, x + 85, y + 30, 176, 0, 64, menu.getScaledProgress());
+            guiGraphics.blit(TEXTURE, x + 92, y + 13, 183, 13, 64, menu.getScaledProgress());
         }
     }
 

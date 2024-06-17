@@ -60,24 +60,10 @@ public class MCPlus
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.INKY_CAP.getId(), NatureBlocks.POTTED_INKY_CAP);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.GIANT_PUFFBALL.getId(), NatureBlocks.POTTED_GIANT_PUFFBALL);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.GRAY_MOREL.getId(), NatureBlocks.POTTED_GRAY_MOREL);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.BASKET_STINKHORN.getId(), NatureBlocks.POTTED_BASKET_STINKHORN);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.INDIGO_MILKCAP.getId(), NatureBlocks.POTTED_INDIGO_MILKCAP);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.DEATH_CAP.getId(), NatureBlocks.POTTED_DEATH_CAP);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.DESTROYING_ANGEL.getId(), NatureBlocks.POTTED_DESTROYING_ANGEL);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.EARTHBALL.getId(), NatureBlocks.POTTED_EARTHBALL);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.FALSE_DEATH_CAP.getId(), NatureBlocks.POTTED_FALSE_DEATH_CAP);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.DESERT_SHAGGY_MANE.getId(), NatureBlocks.POTTED_DESERT_SHAGGY_MANE);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.PORTABELLA.getId(), NatureBlocks.POTTED_PORTABELLA);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.SANDY_STILTBALL.getId(), NatureBlocks.POTTED_SANDY_STILTBALL);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.BLACK_TRUFFLE.getId(), NatureBlocks.POTTED_BLACK_TRUFFLE);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.LILAC_BONNETS.getId(), NatureBlocks.POTTED_LILAC_BONNETS);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.FIRE_CORAL.getId(), NatureBlocks.POTTED_FIRE_CORAL);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.GLOWING_MUSHROOMS.getId(), NatureBlocks.POTTED_GLOWING_MUSHROOMS);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.YELLOW_PARASOLS.getId(), NatureBlocks.POTTED_YELLOW_PARASOLS);
+                    ( (FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.AFUNGUS.getId(), NatureBlocks.POTTED_AFUNGUS);
+                    ( (FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.DEADLY_AFUNGUS.getId(), NatureBlocks.POTTED_DEADLY_AFUNGUS);
         });
+
 
     }
 

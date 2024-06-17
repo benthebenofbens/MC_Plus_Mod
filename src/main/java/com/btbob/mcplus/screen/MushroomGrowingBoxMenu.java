@@ -32,11 +32,11 @@ public class MushroomGrowingBoxMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0,80,11));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1,60,59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2,80,59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3,100,59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 4,35,100));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0,44,23));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1,26,51));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2,44,51));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3,62,51));
+            this.addSlot(new SlotItemHandler(iItemHandler, 4,100,36));
         });
 
         addDataSlots(data);
@@ -49,7 +49,7 @@ public class MushroomGrowingBoxMenu extends AbstractContainerMenu {
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);
-        int progressMyceliumSize = 26;
+        int progressMyceliumSize = 64;
 
         return maxProgress != 0 && progress != 0 ? progress * progressMyceliumSize / maxProgress : 0;
     }

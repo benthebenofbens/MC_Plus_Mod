@@ -11,11 +11,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class MCPlusMushroomBlock extends BushBlock {
+public class GlowingMushroomBlock extends BushBlock {
     protected static final float AABB_OFFSET = 3.0F;
     protected static final VoxelShape SHAPE = Block.box(5.0D, 0.0D, 5.0D, 11.0D, 6.0D, 11.0D);
 
-    public MCPlusMushroomBlock(Properties pProperties) {
+    public GlowingMushroomBlock(Properties pProperties) {
         super(pProperties);
     }
 
@@ -39,4 +39,5 @@ public class MCPlusMushroomBlock extends BushBlock {
             return pLevel.getRawBrightness(pPos, 0) < 13 && blockstate.canSustainPlant(pLevel, blockpos, net.minecraft.core.Direction.UP, this);
         }
     }
+
 }
