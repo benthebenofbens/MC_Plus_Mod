@@ -32,6 +32,7 @@ public class MushroomGrowingBoxScreen extends AbstractContainerScreen<MushroomGr
         int y = (this.height - this.imageHeight) /2;
 
         pGuiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
+        pGuiGraphics.blit(TEXTURE, x + 92, y + 13, 183, 93, 64, 64);
 
         renderMyceliumGrowth(pGuiGraphics,x,y);
     }

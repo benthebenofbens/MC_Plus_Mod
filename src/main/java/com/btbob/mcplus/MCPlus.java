@@ -61,7 +61,7 @@ public class MCPlus
     {
         event.enqueueWork(() -> {
                     ( (FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.AFUNGUS.getId(), NatureBlocks.POTTED_AFUNGUS);
-                    ( (FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.DEADLY_AFUNGUS.getId(), NatureBlocks.POTTED_DEADLY_AFUNGUS);
+                    ( (FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.ROTTEN_AFUNGUS.getId(), NatureBlocks.POTTED_ROTTEN_AFUNGUS);
         });
 
 

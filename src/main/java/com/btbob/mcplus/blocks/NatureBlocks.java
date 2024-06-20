@@ -5,6 +5,7 @@ import com.btbob.mcplus.blocks.custom.MCPlusMushroomBlock;
 import com.btbob.mcplus.blocks.custom.MushroomBunchBlock;
 import com.btbob.mcplus.blocks.custom.MushroomGrowingBoxBlock;
 import com.btbob.mcplus.blocks.custom.MushroomShelfBlock;
+import com.btbob.mcplus.blocks.custom.mushroom_crops.MushroomCropBlock;
 import com.btbob.mcplus.items.MCPlusFoods;
 import com.btbob.mcplus.items.MCPlusItems;
 import net.minecraft.ChatFormatting;
@@ -43,15 +44,16 @@ public class NatureBlocks {
     //SHELVES
     public static final RegistryObject<Block> CHICKEN_OF_THE_WOODS = registerForageableBlock("chicken_of_the_woods", () -> new MushroomShelfBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.EDIBLE_MUSHROOM);
     public static final RegistryObject<Block> WOODY_CHICKEN_OF_THE_WOODS = registerForageableBlock("woody_chicken_of_the_woods", () -> new MushroomShelfBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.INEDIBLE_MUSHROOM);
+
     public static final RegistryObject<Block> FIRE_CORAL = registerForageableBlock("fire_coral", () -> new MushroomBunchBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)) {@Override public void entityInside (BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity){ pEntity.makeStuckInBlock(pState, new Vec3((double) 0.95F, 0.75D, (double) 0.95F));pEntity.hurt(pLevel.damageSources().sweetBerryBush(), 1.0F); }}, MCPlusFoods.DEADLY_MUSHROOM);
 
-    public static final RegistryObject<Block> AFUNGUS = registerForageableBlock("afungus", () -> new MCPlusMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.EDIBLE_MUSHROOM);
+
+    public static final RegistryObject<Block> AFUNGUS = registerForageableBlock("afungus", () -> new MCPlusMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.AFUNGUS);
     public static final RegistryObject<Block> POTTED_AFUNGUS = registerBlock("potted_afungus", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), NatureBlocks.AFUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
+    public static final RegistryObject<Block> AFUNGUS_CROP = BLOCKS.register("afungus_crop", () -> new MushroomCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> ROTTEN_AFUNGUS = registerForageableBlock("rotten_afungus", () -> new MCPlusMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.DEADLY_MUSHROOM);
+    public static final RegistryObject<Block> POTTED_ROTTEN_AFUNGUS = registerBlock("potted_rotten_afungus", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), NatureBlocks.AFUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
 
-    public static final RegistryObject<Block> DEADLY_AFUNGUS = registerForageableBlock("deadly_afungus", () -> new MCPlusMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.DEADLY_MUSHROOM);
-    public static final RegistryObject<Block> POTTED_DEADLY_AFUNGUS = registerBlock("potted_black_truffle", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), NatureBlocks.DEADLY_AFUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
-
-    //
 
 
     //THE BORING STUFF

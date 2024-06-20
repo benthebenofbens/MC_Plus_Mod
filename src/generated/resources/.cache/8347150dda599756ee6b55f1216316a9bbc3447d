@@ -1,5 +1,6 @@
-// 1.20.1	2024-06-17T09:41:14.979106	Item Models: mcplus
+// 1.20.1	2024-06-18T11:06:43.023717	Item Models: mcplus
 7abca13ac4e1757f1be22bcace0f3fb0a73cd434 assets/mcplus/models/item/afungus.json
+6d672874d6e1ff5570512ffe6a23a6a0fa12c54d assets/mcplus/models/item/afungus_spores.json
 6e211e7ffbff13ee5bbe9d3fc4897130b7483c1e assets/mcplus/models/item/bedazzled_cobbled_slate_slab.json
 600ac51b93279e1db302889bb38daae3e015b643 assets/mcplus/models/item/bedazzled_cobbled_slate_stairs.json
 7b6b2fe595dcd18956acc3b933f909a8fd4fb263 assets/mcplus/models/item/bedazzled_cobbled_slate_wall.json
@@ -29,7 +30,6 @@ fd3f647bf41ba4697f0f836ec22ccba0ea6b439e assets/mcplus/models/item/cracked_gneis
 820325fdfed5a2f818c2d4055dae3845af37c613 assets/mcplus/models/item/cracked_slate_tile_slab.json
 552925005873b1e8b65517b8f1acd6cef925f2e0 assets/mcplus/models/item/cracked_slate_tile_stairs.json
 286bb15b169a2c595df0f7b03df52c8eb590c86d assets/mcplus/models/item/cracked_slate_tile_wall.json
-d39a250f7f3be1b5e280ddcd89958187273c7d81 assets/mcplus/models/item/deadly_afungus.json
 edaba897bec29b377c5c2e279d3df360d45b255e assets/mcplus/models/item/energized_cobbled_gneiss_slab.json
 6a9c0bde05f8a91513893d4777acf1a8ade15ac8 assets/mcplus/models/item/energized_cobbled_gneiss_stairs.json
 e9922b1c97982fe66800957853c65a7f95b03d56 assets/mcplus/models/item/energized_cobbled_gneiss_wall.json
@@ -57,6 +57,7 @@ b77a65d7914a6d1d5163a03cd6a33ed6cda79be0 assets/mcplus/models/item/polished_gnei
 7c306006621e25475b3bdfa3fad76ae58fde8c81 assets/mcplus/models/item/polished_slate_slab.json
 15d7d70ca13c42c62dae57fecd10d2f7da1631a9 assets/mcplus/models/item/polished_slate_stairs.json
 1a39d33736faeed16dca8d95a73a81d39887172a assets/mcplus/models/item/polished_slate_wall.json
+e07bd173ee61b6c7b35236b899c41327ae017dd0 assets/mcplus/models/item/rotten_afungus.json
 28cb06fb9cf819cbf34b882e2e9c40b907351ed7 assets/mcplus/models/item/slate_brick_slab.json
 8a3b1370def7bb398ab4a04c0124ce66ab5787be assets/mcplus/models/item/slate_brick_stairs.json
 86fa9b87b1e59f2f0d120d80d3c6b7662203455a assets/mcplus/models/item/slate_brick_wall.json

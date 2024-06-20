@@ -206,8 +206,10 @@ public class MCPlusCreativeMenu {
 
                         pOutput.accept(Blocks.BROWN_MUSHROOM);
                         pOutput.accept(Blocks.RED_MUSHROOM);
+
+                        pOutput.accept(MCPlusItems.AFUNGUS_SPORES.get());
                         pOutput.accept(NatureBlocks.AFUNGUS.get());
-                        pOutput.accept(NatureBlocks.DEADLY_AFUNGUS.get());
+                        pOutput.accept(NatureBlocks.ROTTEN_AFUNGUS.get());
 
 
                         pOutput.accept(MCPlusItems.INDIGO_MILKCAP_SPORES.get());

@@ -3,13 +3,18 @@ package com.btbob.mcplus.datagen;
 import com.btbob.mcplus.MCPlus;
 import com.btbob.mcplus.blocks.MCPlusBlocks;
 import com.btbob.mcplus.blocks.NatureBlocks;
+import com.btbob.mcplus.blocks.custom.mushroom_crops.MushroomCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
 
 
 public class BlockStateProvider extends net.minecraftforge.client.model.generators.BlockStateProvider {
@@ -199,13 +204,11 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
 
         //MUSHROOMS
         //MUSHROOM BLOCKS
-        blockWithItem(NatureBlocks.MUSHROOM_GROWING_BOX);
         simpleBlockWithItem(NatureBlocks.AFUNGUS.get(), models().cross(blockTexture(NatureBlocks.AFUNGUS.get()).getPath(), blockTexture(NatureBlocks.AFUNGUS.get())).renderType("cutout"));
         simpleBlockWithItem(NatureBlocks.POTTED_AFUNGUS.get(), models().singleTexture("potted_afungus", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.AFUNGUS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.DEADLY_AFUNGUS.get(), models().cross(blockTexture(NatureBlocks.DEADLY_AFUNGUS.get()).getPath(), blockTexture(NatureBlocks.DEADLY_AFUNGUS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_DEADLY_AFUNGUS.get(), models().singleTexture("potted_deadly_afungus", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.DEADLY_AFUNGUS.get())).renderType("cutout"));
-
-
+        simpleBlockWithItem(NatureBlocks.ROTTEN_AFUNGUS.get(), models().cross(blockTexture(NatureBlocks.ROTTEN_AFUNGUS.get()).getPath(), blockTexture(NatureBlocks.ROTTEN_AFUNGUS.get())).renderType("cutout"));
+        simpleBlockWithItem(NatureBlocks.POTTED_ROTTEN_AFUNGUS.get(), models().singleTexture("potted_rotten_afungus", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.ROTTEN_AFUNGUS.get())).renderType("cutout"));
+        makeMushroomCrop((CropBlock) NatureBlocks.AFUNGUS_CROP.get(), "afungus_stage_", "afungus_stage_");
     }
 
 
@@ -229,6 +232,18 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    public void makeMushroomCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> mushroomCropStates(state, block, modelName, textureName);
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] mushroomCropStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(((MushroomCropBlock) block).getAgeProperty()),
+                new ResourceLocation(MCPlus.MODID, "block/" + textureName + state.getValue(((MushroomCropBlock) block).getAgeProperty()))).renderType("cutout"));
+        return models;
     }
 
     private ResourceLocation key(Block block) {
