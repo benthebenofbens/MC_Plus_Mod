@@ -14,6 +14,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.rmi.registry.Registry;
 import java.util.function.Function;
 
 
@@ -204,10 +205,9 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
 
         //MUSHROOMS
         //MUSHROOM BLOCKS
-        simpleBlockWithItem(NatureBlocks.AFUNGUS.get(), models().cross(blockTexture(NatureBlocks.AFUNGUS.get()).getPath(), blockTexture(NatureBlocks.AFUNGUS.get())).renderType("cutout"));
+        blockWithItem(NatureBlocks.MYCELIATED_DIRT);
+        mushroomBlockWithItem(NatureBlocks.AFUNGUS, "afungus");
         simpleBlockWithItem(NatureBlocks.POTTED_AFUNGUS.get(), models().singleTexture("potted_afungus", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.AFUNGUS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.ROTTEN_AFUNGUS.get(), models().cross(blockTexture(NatureBlocks.ROTTEN_AFUNGUS.get()).getPath(), blockTexture(NatureBlocks.ROTTEN_AFUNGUS.get())).renderType("cutout"));
-        simpleBlockWithItem(NatureBlocks.POTTED_ROTTEN_AFUNGUS.get(), models().singleTexture("potted_rotten_afungus", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.ROTTEN_AFUNGUS.get())).renderType("cutout"));
         makeMushroomCrop((CropBlock) NatureBlocks.AFUNGUS_CROP.get(), "afungus_stage_", "afungus_stage_");
     }
 
@@ -227,6 +227,12 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(MCPlus.MODID + ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
+
+    private void mushroomBlockWithItem(RegistryObject<Block> blockRegistryObject, String texture) {
+        simpleBlockWithItem(blockRegistryObject.get(), models().cross(blockTexture(blockRegistryObject.get()).getPath(), new ResourceLocation("mcplus:block/" + texture +"_stage_2")).renderType("cutout"));
+
+    }
+
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),

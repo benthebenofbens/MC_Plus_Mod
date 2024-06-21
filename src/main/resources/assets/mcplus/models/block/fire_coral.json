@@ -3,7 +3,6 @@
   "render_type": "minecraft:cutout",
 
   "textures": {
-    "0": "mcplus:block/fire_coral_stage_3",
-    "particle": "mcplus:block/fire_coral_stage_3"
+    "cross": "mcplus:block/fire_coral_stage_3"
   }
 }

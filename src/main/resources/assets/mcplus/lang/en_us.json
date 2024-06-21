@@ -173,6 +173,8 @@
   "block.mcplus.gabbro_pillar_base": "Gabbro Pillar Base",
 
   "block.mcplus.mushroom_growing_box": "Mushroom Box",
+  "block.mcplus.myceliated_dirt": "Myceliated Dirt",
+
   "block.mcplus.chicken_of_the_woods": "Chicken Of The Woods",
   "block.mcplus.woody_chicken_of_the_woods": "Woody Chicken Of The Woods",
   "block.mcplus.chicken_of_the_woods.desc": "Laetiporus sulphureus",
@@ -180,9 +182,13 @@
   "item.mcplus.chicken_of_the_woods_spores": "Chicken Of The Woods Spores",
 
   "block.mcplus.fire_coral": "Fire Coral",
+  "block.mcplus.decayed_fire_coral": "Decayed Fire Coral",
   "block.mcplus.fire_coral.desc": "Podostroma cornu-damae",
+  "block.mcplus.decayed_fire_coral.desc": "Podostroma cornu-damae",
   "item.mcplus.fire_coral_spores": "Fire Coral Spores",
 
   "block.mcplus.afungus": "Afungus",
-  "block.mcplus.afungus.desc": "Bolete amongus"
+  "block.mcplus.rotten_afungus": "Rotten Afungus",
+  "block.mcplus.afungus.desc": "Bolete amongus",
+  "block.mcplus.rotten_afungus.desc": "Bolete amongus"
 }

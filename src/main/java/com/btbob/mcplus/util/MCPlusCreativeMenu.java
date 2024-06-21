@@ -196,20 +196,19 @@ public class MCPlusCreativeMenu {
                     .title(Component.translatable("creativetab.mc_plus_nature_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(NatureBlocks.MUSHROOM_GROWING_BOX.get());
+                        pOutput.accept(NatureBlocks.MYCELIATED_DIRT.get());
 
                         pOutput.accept(MCPlusItems.CHICKEN_OF_THE_WOODS_SPORES.get());
                         pOutput.accept(NatureBlocks.CHICKEN_OF_THE_WOODS.get());
-                        pOutput.accept(NatureBlocks.WOODY_CHICKEN_OF_THE_WOODS.get());
 
                         pOutput.accept(MCPlusItems.FIRE_CORAL_SPORES.get());
-                        pOutput.accept(NatureBlocks.FIRE_CORAL.get());
+                        pOutput.accept(MCPlusItems.FIRE_CORAL.get());
 
                         pOutput.accept(Blocks.BROWN_MUSHROOM);
                         pOutput.accept(Blocks.RED_MUSHROOM);
 
                         pOutput.accept(MCPlusItems.AFUNGUS_SPORES.get());
                         pOutput.accept(NatureBlocks.AFUNGUS.get());
-                        pOutput.accept(NatureBlocks.ROTTEN_AFUNGUS.get());
 
 
                         pOutput.accept(MCPlusItems.INDIGO_MILKCAP_SPORES.get());

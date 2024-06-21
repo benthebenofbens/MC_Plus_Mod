@@ -2,9 +2,8 @@ package com.btbob.mcplus.blocks;
 
 import com.btbob.mcplus.MCPlus;
 import com.btbob.mcplus.blocks.custom.MCPlusMushroomBlock;
-import com.btbob.mcplus.blocks.custom.MushroomBunchBlock;
 import com.btbob.mcplus.blocks.custom.MushroomGrowingBoxBlock;
-import com.btbob.mcplus.blocks.custom.MushroomShelfBlock;
+import com.btbob.mcplus.blocks.custom.MCPlusMushroomWallBlock;
 import com.btbob.mcplus.blocks.custom.mushroom_crops.MushroomCropBlock;
 import com.btbob.mcplus.items.MCPlusFoods;
 import com.btbob.mcplus.items.MCPlusItems;
@@ -18,7 +17,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -39,20 +37,19 @@ public class NatureBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MCPlus.MODID);
 
     public static final RegistryObject<Block> MUSHROOM_GROWING_BOX = registerBlock("mushroom_growing_box", () -> new MushroomGrowingBoxBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> MYCELIATED_DIRT = registerBlock("myceliated_dirt", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
 
     //SHELVES
-    public static final RegistryObject<Block> CHICKEN_OF_THE_WOODS = registerForageableBlock("chicken_of_the_woods", () -> new MushroomShelfBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.EDIBLE_MUSHROOM);
-    public static final RegistryObject<Block> WOODY_CHICKEN_OF_THE_WOODS = registerForageableBlock("woody_chicken_of_the_woods", () -> new MushroomShelfBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.INEDIBLE_MUSHROOM);
+    public static final RegistryObject<Block> CHICKEN_OF_THE_WOODS = registerForageableBlock("chicken_of_the_woods", () -> new MCPlusMushroomWallBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.EDIBLE_MUSHROOM);
 
-    public static final RegistryObject<Block> FIRE_CORAL = registerForageableBlock("fire_coral", () -> new MushroomBunchBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)) {@Override public void entityInside (BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity){ pEntity.makeStuckInBlock(pState, new Vec3((double) 0.95F, 0.75D, (double) 0.95F));pEntity.hurt(pLevel.damageSources().sweetBerryBush(), 1.0F); }}, MCPlusFoods.DEADLY_MUSHROOM);
+    public static final RegistryObject<Block> FIRE_CORAL = registerBlock("fire_coral", () -> new MCPlusMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)) {@Override public void entityInside (BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity){ pEntity.hurt(pLevel.damageSources().sweetBerryBush(), 1.0F); }});
+    public static final RegistryObject<Block> FIRE_CORAL_WALL = registerBlock("fire_coral_wall", () -> new MCPlusMushroomWallBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)) {@Override public void entityInside (BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity){ pEntity.hurt(pLevel.damageSources().sweetBerryBush(), 1.0F); }});
 
 
     public static final RegistryObject<Block> AFUNGUS = registerForageableBlock("afungus", () -> new MCPlusMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.AFUNGUS);
     public static final RegistryObject<Block> POTTED_AFUNGUS = registerBlock("potted_afungus", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), NatureBlocks.AFUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
     public static final RegistryObject<Block> AFUNGUS_CROP = BLOCKS.register("afungus_crop", () -> new MushroomCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> ROTTEN_AFUNGUS = registerForageableBlock("rotten_afungus", () -> new MCPlusMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)), MCPlusFoods.DEADLY_MUSHROOM);
-    public static final RegistryObject<Block> POTTED_ROTTEN_AFUNGUS = registerBlock("potted_rotten_afungus", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), NatureBlocks.AFUNGUS, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
 
 
 

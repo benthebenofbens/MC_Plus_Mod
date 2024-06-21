@@ -125,13 +125,12 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         simpleItem(MCPlusItems.INDIGO_MILKCAP_SPORES);
         simpleItem(MCPlusItems.CHICKEN_OF_THE_WOODS_SPORES);
         simpleItem(MCPlusItems.FIRE_CORAL_SPORES);
+        bothBlockItem(MCPlusItems.FIRE_CORAL, NatureBlocks.FIRE_CORAL);
+
         simpleItem(MCPlusItems.AFUNGUS_SPORES);
 
         simpleBlockItemBlockTexture(NatureBlocks.CHICKEN_OF_THE_WOODS);
-        simpleBlockItemBlockTexture(NatureBlocks.WOODY_CHICKEN_OF_THE_WOODS);
-        simpleBlockItemBlockTexture(NatureBlocks.FIRE_CORAL);
         simpleBlockItemBlockTexture(NatureBlocks.AFUNGUS);
-        simpleBlockItemBlockTexture(NatureBlocks.ROTTEN_AFUNGUS);
 
     }
 

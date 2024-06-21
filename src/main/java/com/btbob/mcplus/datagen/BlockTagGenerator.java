@@ -3,6 +3,7 @@ package com.btbob.mcplus.datagen;
 
 import com.btbob.mcplus.MCPlus;
 import com.btbob.mcplus.blocks.MCPlusBlocks;
+import com.btbob.mcplus.blocks.NatureBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -19,6 +20,7 @@ public class BlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(BlockTags.MUSHROOM_GROW_BLOCK).add(NatureBlocks.MYCELIATED_DIRT.get());
         this.tag(BlockTags.WALLS).add(
                 MCPlusBlocks.GNEISS_WALL.get(),
                 MCPlusBlocks.COBBLED_GNEISS_WALL.get(),
