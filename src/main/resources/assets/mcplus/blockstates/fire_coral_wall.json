@@ -1,8 +1,8 @@
 {
   "variants": {
-    "facing=south": { "model": "mcplus:block/fire_coral_wall" },
-    "facing=west": { "model": "mcplus:block/fire_coral_wall", "y": 90 },
-    "facing=north": { "model": "mcplus:block/fire_coral_wall", "y": 180 },
-    "facing=east": { "model": "mcplus:block/fire_coral_wall", "y": 270 }
+    "facing=south": { "model": "mcplus:block/mushrooms/bunch/fire_coral/stage_3" },
+    "facing=west": { "model": "mcplus:block/mushrooms/bunch/fire_coral/stage_3", "y": 90 },
+    "facing=north": { "model": "mcplus:block/mushrooms/bunch/fire_coral/stage_3", "y": 180 },
+    "facing=east": { "model": "mcplus:block/mushrooms/bunch/fire_coral/stage_3", "y": 270 }
   }
 }

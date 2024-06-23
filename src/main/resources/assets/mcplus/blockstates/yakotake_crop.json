@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0,lit=false": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/day/stage_1"
+    },
+    "age=1,lit=false": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/day/stage_2"
+    },
+    "age=2,lit=false": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/day/stage_3"
+    },
+    "age=3,lit=false": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/day/stage_4"
+    },
+    "age=0,lit=true": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/night/stage_1"
+    },
+    "age=1,lit=true": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/night/stage_2"
+    },
+    "age=2,lit=true": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/night/stage_3"
+    },
+    "age=3,lit=true": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/night/stage_4"
+    }
+  }
+}

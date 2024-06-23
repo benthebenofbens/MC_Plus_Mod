@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=south,lit=false": { "model": "mcplus:block/mushrooms/bunch/yakotake/day/stage_3" },
+    "facing=west,lit=false": { "model": "mcplus:block/mushrooms/bunch/yakotake/day/stage_3", "y": 90 },
+    "facing=north,lit=false": { "model": "mcplus:block/mushrooms/bunch/yakotake/day/stage_3", "y": 180 },
+    "facing=east,lit=false": { "model": "mcplus:block/mushrooms/bunch/yakotake/day/stage_3", "y": 270 },
+    "facing=south,lit=true": { "model": "mcplus:block/mushrooms/bunch/yakotake/night/stage_3" },
+    "facing=west,lit=true": { "model": "mcplus:block/mushrooms/bunch/yakotake/night/stage_3", "y": 90 },
+    "facing=north,lit=true": { "model": "mcplus:block/mushrooms/bunch/yakotake/night/stage_3", "y": 180 },
+    "facing=east,lit=true": { "model": "mcplus:block/mushrooms/bunch/yakotake/night/stage_3", "y": 270 }
+  }
+}

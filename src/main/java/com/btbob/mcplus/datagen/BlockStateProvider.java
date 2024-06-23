@@ -206,9 +206,6 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
         //MUSHROOMS
         //MUSHROOM BLOCKS
         blockWithItem(NatureBlocks.MYCELIATED_DIRT);
-        mushroomBlockWithItem(NatureBlocks.AFUNGUS, "afungus");
-        simpleBlockWithItem(NatureBlocks.POTTED_AFUNGUS.get(), models().singleTexture("potted_afungus", new ResourceLocation("flower_pot_cross"),"plant", blockTexture(NatureBlocks.AFUNGUS.get())).renderType("cutout"));
-        makeMushroomCrop((CropBlock) NatureBlocks.AFUNGUS_CROP.get(), "afungus_stage_", "afungus_stage_");
     }
 
 
@@ -238,18 +235,6 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
-    }
-
-    public void makeMushroomCrop(CropBlock block, String modelName, String textureName) {
-        Function<BlockState, ConfiguredModel[]> function = state -> mushroomCropStates(state, block, modelName, textureName);
-        getVariantBuilder(block).forAllStates(function);
-    }
-
-    private ConfiguredModel[] mushroomCropStates(BlockState state, CropBlock block, String modelName, String textureName) {
-        ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(((MushroomCropBlock) block).getAgeProperty()),
-                new ResourceLocation(MCPlus.MODID, "block/" + textureName + state.getValue(((MushroomCropBlock) block).getAgeProperty()))).renderType("cutout"));
-        return models;
     }
 
     private ResourceLocation key(Block block) {

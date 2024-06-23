@@ -2,15 +2,11 @@ package com.btbob.mcplus;
 
 import com.btbob.mcplus.blocks.MCPlusBlocks;
 import com.btbob.mcplus.blocks.NatureBlocks;
-import com.btbob.mcplus.blocks.entity.ModBlockEntities;
 import com.btbob.mcplus.items.MCPlusItems;
-import com.btbob.mcplus.screen.MCPlusMenuTypes;
-import com.btbob.mcplus.screen.MushroomGrowingBoxScreen;
 import com.btbob.mcplus.util.MCPlusCreativeMenu;
 import com.btbob.mcplus.world.effect.MCPlusMobEffects;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -45,9 +41,6 @@ public class MCPlus
         NatureBlocks.register(modEventBus);
 
         MCPlusMobEffects.register(modEventBus);
-        ModBlockEntities.register(modEventBus);
-
-        MCPlusMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -59,9 +52,7 @@ public class MCPlus
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        event.enqueueWork(() -> {
-                    ( (FlowerPotBlock) Blocks.FLOWER_POT).addPlant(NatureBlocks.AFUNGUS.getId(), NatureBlocks.POTTED_AFUNGUS);
-        });
+      //  event.enqueueWork(() -> { });
 
 
     }
@@ -86,8 +77,6 @@ public class MCPlus
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            MenuScreens.register(MCPlusMenuTypes.MUSHROOM_GROWING_BOX_MENU.get(), MushroomGrowingBoxScreen::new);
-
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());

@@ -2,9 +2,13 @@ package com.btbob.mcplus.datagen;
 
 import com.btbob.mcplus.MCPlus;
 import com.btbob.mcplus.blocks.MCPlusBlocks;
+import com.btbob.mcplus.blocks.NatureBlocks;
+import com.btbob.mcplus.util.MCPlusTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
@@ -27,6 +31,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider im
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pRecipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, NatureBlocks.MUSHROOM_GROWING_BOX.get(), 3).pattern("WMW").pattern("WHW").pattern("WWW").define('W', ItemTags.PLANKS).define('M', NatureBlocks.MYCELIATED_DIRT.get()).define('H', Blocks.HAY_BLOCK).unlockedBy(getHasName(NatureBlocks.MYCELIATED_DIRT.get()), has(NatureBlocks.MYCELIATED_DIRT.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, NatureBlocks.MYCELIATED_DIRT.get(),2).pattern("SD").pattern("DS").define('S', MCPlusTags.Items.SPORES).define('D', Blocks.DIRT).unlockedBy(getHasName(Blocks.DIRT), has(Blocks.DIRT)).save(pRecipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, MCPlusBlocks.MARBLE.get(),2).pattern("LC").pattern("CL").define('L', MCPlusBlocks.LIMESTONE.get()).define('C', MCPlusBlocks.CHERT.get()).unlockedBy(getHasName(MCPlusBlocks.LIMESTONE.get()), has(MCPlusBlocks.LIMESTONE.get())).save(pRecipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, MCPlusBlocks.PAINTED_COBBLED_MARBLE.get()).requires(MCPlusBlocks.COBBLED_MARBLE.get()).requires(Items.LAPIS_LAZULI).unlockedBy(getHasName(MCPlusBlocks.COBBLED_MARBLE.get()), has(MCPlusBlocks.COBBLED_MARBLE.get())).save(pRecipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, MCPlusBlocks.PAINTED_MARBLE_BRICKS.get()).requires(MCPlusBlocks.MARBLE_BRICKS.get()).requires(Items.LAPIS_LAZULI).unlockedBy(getHasName(MCPlusBlocks.MARBLE_BRICKS.get()), has(MCPlusBlocks.MARBLE_BRICKS.get())).save(pRecipeOutput);

@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-14T08:40:22.601427	Recipes
+// 1.20.1	2024-06-21T11:40:54.87649	Recipes
 50198f0260050d304d875add28066fb25c498686 data/mcplus/advancements/recipes/building_blocks/bedazzled_cobbled_slate.json
 acca201a7c5f17f01be1eab2d287cc8e1ba063a3 data/mcplus/advancements/recipes/building_blocks/bedazzled_cobbled_slate_slab.json
 91334a5f111489111dec852d8d576a0bb0fee933 data/mcplus/advancements/recipes/building_blocks/bedazzled_cobbled_slate_wall.json
@@ -50,6 +50,7 @@ be3b9e90e429ed83375c22ef5432d6e38a73413a data/mcplus/advancements/recipes/buildi
 2368a9dcb7022d598afcb9e2bde18ba714e0e86d data/mcplus/advancements/recipes/building_blocks/limestone.json
 de190b40ed5d9cffca4c089a86aed3a7180363f8 data/mcplus/advancements/recipes/building_blocks/marble.json
 b75645ce4d0aa80e0ddada57a00a99471c0a75e0 data/mcplus/advancements/recipes/building_blocks/marble_bricks.json
+105b97630f27cf1d59758c41d53f5cbe3b7f1dee data/mcplus/advancements/recipes/building_blocks/myceliated_dirt.json
 d4217c50dd39a197dc735924f2265044b3a42254 data/mcplus/advancements/recipes/building_blocks/painted_cobbled_marble.json
 3eddd4f9b56509786ebcb7c4e37bd22816b18d3f data/mcplus/advancements/recipes/building_blocks/painted_marble_bricks.json
 47a0c1b8f09dfd7f20c4a335a5b69d588e66f951 data/mcplus/advancements/recipes/building_blocks/painted_marble_tiles.json
@@ -79,6 +80,7 @@ c5efd451790d784daa655cf2cf3bd61f534f3223 data/mcplus/advancements/recipes/buildi
 62e13c8dc83eadab5f64522ba33eb57bd190298a data/mcplus/advancements/recipes/building_blocks/smooth_slate.json
 d89e30d1379106ee282ab8217dfad0e2d21ae4fc data/mcplus/advancements/recipes/building_blocks/smooth_slate_slab.json
 355c658f265fff18c29fc328ebcdb207a287ce58 data/mcplus/advancements/recipes/building_blocks/smooth_slate_wall.json
+43c03f498e8f2d028c0993f49996f436fa6200ef data/mcplus/advancements/recipes/decorations/mushroom_growing_box.json
 fbcaa0b7354684ce58293b12cb17516df44b390b data/mcplus/recipes/bedazzled_cobbled_slate.json
 20d373ad8a9039a1f4ed06ede593f793ca8a4472 data/mcplus/recipes/bedazzled_cobbled_slate_slab.json
 1d919950c2fbf606f0343fffa6cef991995206f3 data/mcplus/recipes/bedazzled_cobbled_slate_wall.json
@@ -130,6 +132,8 @@ da726e7ae269076c8c716b6789a04b80517fcab4 data/mcplus/recipes/gneiss_tile_slab.js
 7f15a1a5444eec26cb12d757e565fd90ff8d8a28 data/mcplus/recipes/limestone.json
 da3f2f24e6a62d1655f416c77898ae29df28d07c data/mcplus/recipes/marble.json
 598112579882ee47d14f432aff43e4b46f89d738 data/mcplus/recipes/marble_bricks.json
+4593b1c06b27c1df2a2c7cdf03599fe42ec6e731 data/mcplus/recipes/mushroom_growing_box.json
+a8a6d03dad617cbe3fdd66dde6a5e70ce5be55b0 data/mcplus/recipes/myceliated_dirt.json
 64f58dec1515a58b2d084a4f4e7fe43c113d0e85 data/mcplus/recipes/painted_cobbled_marble.json
 40e980228a0fc7b9ae5a6491c63c3c7ac28d158d data/mcplus/recipes/painted_marble_bricks.json
 901521399bf01b6ea77c7e4d16029719b5084f63 data/mcplus/recipes/painted_marble_tiles.json

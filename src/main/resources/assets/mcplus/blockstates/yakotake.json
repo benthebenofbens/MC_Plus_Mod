@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/day/stage_3"
+    },
+    "lit=true": {
+      "model": "mcplus:block/mushrooms/ground/yakotake/night/stage_3"
+    }
+  }
+}

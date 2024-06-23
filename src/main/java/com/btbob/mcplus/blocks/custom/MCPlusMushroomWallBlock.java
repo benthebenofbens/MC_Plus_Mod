@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.stream.Stream;
 
-public class MCPlusMushroomWallBlock extends HorizontalDirectionalBlock {
+public class MCPlusMushroomWallBlock extends HorizontalDirectionalBlock implements net.minecraftforge.common.IPlantable {
     public MCPlusMushroomWallBlock(Properties properties) {
         super(properties);
     }
@@ -83,6 +83,17 @@ public class MCPlusMushroomWallBlock extends HorizontalDirectionalBlock {
     @Override
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
         BlockState blockstate = pLevel.getBlockState(pPos.relative(pState.getValue(FACING)));
-        return blockstate.is(BlockTags.LOGS_THAT_BURN);
+        if (blockstate.is(BlockTags.MUSHROOM_GROW_BLOCK) || blockstate.is(BlockTags.LOGS_THAT_BURN)) {
+            return true;
+        } else {
+            return pLevel.getRawBrightness(pPos, 0) < 13 && blockstate.canSustainPlant(pLevel, pPos, pState.getValue(FACING).getOpposite(), this);
+        }    }
+
+
+    @Override
+    public BlockState getPlant(BlockGetter level, BlockPos pos) {
+        BlockState state = level.getBlockState(pos);
+        if (state.getBlock() != this) return defaultBlockState();
+        return state;
     }
 }

@@ -121,16 +121,64 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         evenSimplerBlockItem(MCPlusBlocks.SMOOTH_GABBRO_SLAB);
 
         //MUSHROOMS
+        evenSimplerBlockItem(NatureBlocks.MUSHROOM_GROWING_BOX);
 
-        simpleItem(MCPlusItems.INDIGO_MILKCAP_SPORES);
-        simpleItem(MCPlusItems.CHICKEN_OF_THE_WOODS_SPORES);
-        simpleItem(MCPlusItems.FIRE_CORAL_SPORES);
-        bothBlockItem(MCPlusItems.FIRE_CORAL, NatureBlocks.FIRE_CORAL);
+        mushBlockItem(MCPlusItems.FIRE_CORAL, "fire_coral_spike");
+        mushBlockItem(MCPlusItems.CHICKEN_OF_THE_WOODS, "chicken_of_the_woods");
+        mushBlockItem(MCPlusItems.GLOWING_MUSHROOM, "glowing_mushroom");
+        mushBlockItem(MCPlusItems.GIANT_PUFFBALL, "giant_puffball");
+        mushBlockItem(MCPlusItems.LIONS_MANE, "lions_mane");
+        mushBlockItem(MCPlusItems.WOODEAR, "woodear");
+        mushBlockItem(MCPlusItems.OYSTER, "oyster");
+        mushBlockItem(MCPlusItems.MAITAKE, "maitake");
+        mushBlockItem(MCPlusItems.DESERT_SHAGGY_MANE, "desert_shaggy_mane_cap");
+        mushBlockItem(MCPlusItems.AFUNGUS, "afungus");
+        mushBlockItem(MCPlusItems.GOLDEN_HALO, "golden_halo_cap");
+        mushBlockItem(MCPlusItems.HONEY_FUNGUS, "honey_cap");
+        mushBlockItem(MCPlusItems.SUBBS, "subbs_cap");
+        mushBlockItem(MCPlusItems.INKY_CAP, "inky_cap");
+        mushBlockItem(MCPlusItems.BASKET_STINKHORN, "basket_stinkhorn_tendrils");
+        mushBlockItem(MCPlusItems.DEATH_CAP, "death_cap");
+        mushBlockItem(MCPlusItems.DESTROYING_ANGEL, "destroying_angel");
+        mushBlockItem(MCPlusItems.FALSE_DEATH_CAP, "false_death_cap");
+        mushBlockItem(MCPlusItems.FLY_AGARIC, "fly_agaric");
+        mushBlockItem(MCPlusItems.GRAY_MOREL, "gray_morel");
+        mushBlockItem(MCPlusItems.INDIGO_MILKCAP, "indigo_milkcap");
+        mushBlockItem(MCPlusItems.LILAC_BONNET, "lilac_bonnet_cap");
+        mushBlockItem(MCPlusItems.PORTABELLA, "portabella");
+        mushBlockItem(MCPlusItems.SANDY_STILTBALL, "sandy_stiltball");
+        mushBlockItem(MCPlusItems.YELLOW_PARASOL, "yellow_parasol_cap");
+        mushBlockItem(MCPlusItems.YAKOTAKE, "yakotake_cap");
 
-        simpleItem(MCPlusItems.AFUNGUS_SPORES);
+        //MUSHROOM SPORES
+        sporeItem(MCPlusItems.AFUNGUS_SPORES, "afungus");
+        sporeItem(MCPlusItems.YAKOTAKE_SPORES, "yakotake");
+        sporeItem(MCPlusItems.OYSTER_SPORES, "oyster");
+        sporeItem(MCPlusItems.MAITAKE_SPORES, "maitake");
+        sporeItem(MCPlusItems.INDIGO_MILKCAP_SPORES, "indigo_milkcap");
+        sporeItem(MCPlusItems.CHICKEN_OF_THE_WOODS_SPORES, "chicken_of_the_woods");
+        sporeItem(MCPlusItems.WOODEAR_SPORES, "woodear");
+        sporeItem(MCPlusItems.FIRE_CORAL_SPORES, "fire_coral");
+        sporeItem(MCPlusItems.GIANT_PUFFBALL_SPORES, "giant_puffball");
+        sporeItem(MCPlusItems.GLOWING_MUSHROOM_SPORES, "glowing_mushroom");
+        sporeItem(MCPlusItems.DESERT_SHAGGY_MANE_SPORES, "desert_shaggy_mane");
+        sporeItem(MCPlusItems.LIONS_MANE_SPORES, "lions_mane");
+        sporeItem(MCPlusItems.GOLDEN_HALO_SPORES, "golden_halo");
+        sporeItem(MCPlusItems.HONEY_FUNGUS_SPORES, "honey");
+        sporeItem(MCPlusItems.SUBBS_SPORES, "subbs");
+        sporeItem(MCPlusItems.INKY_CAP_SPORES, "inky_cap");
+        sporeItem(MCPlusItems.BASKET_STINKHORN_SPORES, "basket_stinkhorn");
+        sporeItem(MCPlusItems.DEATH_CAP_SPORES, "death_cap");
+        sporeItem(MCPlusItems.DESTROYING_ANGEL_SPORES, "destroying_angel");
+        sporeItem(MCPlusItems.FALSE_DEATH_CAP_SPORES, "false_death_cap");
+        sporeItem(MCPlusItems.FLY_AGARIC_SPORES, "fly_agaric");
+        sporeItem(MCPlusItems.GRAY_MOREL_SPORES, "gray_morel");
+        sporeItem(MCPlusItems.INDIGO_MILKCAP_SPORES, "indigo_milkcap");
+        sporeItem(MCPlusItems.LILAC_BONNET_SPORES, "lilac_bonnet");
+        sporeItem(MCPlusItems.PORTABELLA_SPORES, "portabella");
+        sporeItem(MCPlusItems.SANDY_STILTBALL_SPORES, "sandy_stiltball");
+        sporeItem(MCPlusItems.YELLOW_PARASOL_SPORES, "yellow_parasol");
 
-        simpleBlockItemBlockTexture(NatureBlocks.CHICKEN_OF_THE_WOODS);
-        simpleBlockItemBlockTexture(NatureBlocks.AFUNGUS);
 
     }
 
@@ -140,12 +188,24 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MCPlus.MODID, "item/" + item.getId().getPath()));
     }
+    private ItemModelBuilder sporeItem(RegistryObject<Item> item, String name) {
+        return withExistingParent(item.getId().getPath(),
+
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MCPlus.MODID, "item/spores/" + name));
+    }
 
 
     private ItemModelBuilder bothBlockItem(RegistryObject<BlockItem> item, RegistryObject<Block> block) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MCPlus.MODID, "block/" + block.getId().getPath()));
+    }
+
+    private ItemModelBuilder mushBlockItem(RegistryObject<BlockItem> item, String name) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MCPlus.MODID, "item/mushrooms/" + name));
     }
 
     public void bothBlockItemBlockShape(RegistryObject<BlockItem> item, RegistryObject<Block> block) {

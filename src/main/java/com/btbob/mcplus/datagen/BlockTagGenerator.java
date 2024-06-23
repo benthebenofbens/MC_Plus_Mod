@@ -48,6 +48,8 @@ public class BlockTagGenerator extends BlockTagsProvider {
         );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL).add(
+                NatureBlocks.MYCELIATED_DIRT.get(),
+                NatureBlocks.MUSHROOM_GROWING_BOX.get(),
                 MCPlusBlocks.GNEISS.get(),
                 MCPlusBlocks.GNEISS_STAIRS.get(),
                 MCPlusBlocks.GNEISS_SLAB.get(),
@@ -375,6 +377,13 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 MCPlusBlocks.CHERT_TILES.get(),
                 MCPlusBlocks.CRACKED_CHERT_TILES.get(),
                 MCPlusBlocks.CRYSTALLINE_CHERT_TILES.get()
+        );
+
+        this.tag(BlockTags.MINEABLE_WITH_AXE).add(
+                NatureBlocks.MUSHROOM_GROWING_BOX.get()
+        );
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(
+                NatureBlocks.MYCELIATED_DIRT.get()
         );
 
     }

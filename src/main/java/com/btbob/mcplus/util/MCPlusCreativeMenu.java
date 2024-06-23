@@ -197,21 +197,89 @@ public class MCPlusCreativeMenu {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(NatureBlocks.MUSHROOM_GROWING_BOX.get());
                         pOutput.accept(NatureBlocks.MYCELIATED_DIRT.get());
+                        pOutput.accept(MCPlusItems.BLACK_TRUFFLE.get());
 
                         pOutput.accept(MCPlusItems.CHICKEN_OF_THE_WOODS_SPORES.get());
-                        pOutput.accept(NatureBlocks.CHICKEN_OF_THE_WOODS.get());
+                        pOutput.accept(MCPlusItems.CHICKEN_OF_THE_WOODS.get());
+
+                        pOutput.accept(MCPlusItems.MAITAKE_SPORES.get());
+                        pOutput.accept(MCPlusItems.MAITAKE.get());
+
+                        pOutput.accept(MCPlusItems.OYSTER_SPORES.get());
+                        pOutput.accept(MCPlusItems.OYSTER.get());
+
+                        pOutput.accept(MCPlusItems.WOODEAR_SPORES.get());
+                        pOutput.accept(MCPlusItems.WOODEAR.get());
 
                         pOutput.accept(MCPlusItems.FIRE_CORAL_SPORES.get());
                         pOutput.accept(MCPlusItems.FIRE_CORAL.get());
 
                         pOutput.accept(Blocks.BROWN_MUSHROOM);
+
                         pOutput.accept(Blocks.RED_MUSHROOM);
 
                         pOutput.accept(MCPlusItems.AFUNGUS_SPORES.get());
                         pOutput.accept(NatureBlocks.AFUNGUS.get());
 
+                        pOutput.accept(MCPlusItems.DESERT_SHAGGY_MANE_SPORES.get());
+                        pOutput.accept(NatureBlocks.DESERT_SHAGGY_MANE.get());
+
+                        pOutput.accept(MCPlusItems.GIANT_PUFFBALL_SPORES.get());
+                        pOutput.accept(MCPlusItems.GIANT_PUFFBALL.get());
+
+                        pOutput.accept(MCPlusItems.LIONS_MANE_SPORES.get());
+                        pOutput.accept(MCPlusItems.LIONS_MANE.get());
+
+                        pOutput.accept(MCPlusItems.GLOWING_MUSHROOM.get());
+                        pOutput.accept(MCPlusItems.GLOWING_MUSHROOM_SPORES.get());
+
+                        pOutput.accept(MCPlusItems.GOLDEN_HALO_SPORES.get());
+                        pOutput.accept(MCPlusItems.GOLDEN_HALO.get());
+
+                        pOutput.accept(MCPlusItems.SUBBS_SPORES.get());
+                        pOutput.accept(MCPlusItems.SUBBS.get());
+
+                        pOutput.accept(MCPlusItems.INKY_CAP_SPORES.get());
+                        pOutput.accept(MCPlusItems.INKY_CAP.get());
+
+                        pOutput.accept(MCPlusItems.HONEY_FUNGUS_SPORES.get());
+                        pOutput.accept(MCPlusItems.HONEY_FUNGUS.get());
+
+                        pOutput.accept(MCPlusItems.BASKET_STINKHORN_SPORES.get());
+                        pOutput.accept(MCPlusItems.BASKET_STINKHORN.get());
+
+                        pOutput.accept(MCPlusItems.DEATH_CAP_SPORES.get());
+                        pOutput.accept(MCPlusItems.DEATH_CAP.get());
+
+                        pOutput.accept(MCPlusItems.DESTROYING_ANGEL_SPORES.get());
+                        pOutput.accept(MCPlusItems.DESTROYING_ANGEL.get());
+
+                        pOutput.accept(MCPlusItems.FALSE_DEATH_CAP_SPORES.get());
+                        pOutput.accept(MCPlusItems.FALSE_DEATH_CAP.get());
+
+                        pOutput.accept(MCPlusItems.FLY_AGARIC_SPORES.get());
+                        pOutput.accept(MCPlusItems.FLY_AGARIC.get());
+
+                        pOutput.accept(MCPlusItems.GRAY_MOREL_SPORES.get());
+                        pOutput.accept(MCPlusItems.GRAY_MOREL.get());
 
                         pOutput.accept(MCPlusItems.INDIGO_MILKCAP_SPORES.get());
+                        pOutput.accept(MCPlusItems.INDIGO_MILKCAP.get());
+
+                        pOutput.accept(MCPlusItems.LILAC_BONNET_SPORES.get());
+                        pOutput.accept(MCPlusItems.LILAC_BONNET.get());
+
+                        pOutput.accept(MCPlusItems.PORTABELLA_SPORES.get());
+                        pOutput.accept(MCPlusItems.PORTABELLA.get());
+
+                        pOutput.accept(MCPlusItems.SANDY_STILTBALL_SPORES.get());
+                        pOutput.accept(MCPlusItems.SANDY_STILTBALL.get());
+
+                        pOutput.accept(MCPlusItems.YELLOW_PARASOL_SPORES.get());
+                        pOutput.accept(MCPlusItems.YELLOW_PARASOL.get());
+
+                        pOutput.accept(MCPlusItems.YAKOTAKE_SPORES.get());
+                        pOutput.accept(MCPlusItems.YAKOTAKE.get());
 
 
                     })

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "mcplus:block/mushrooms/wall/false_death_cap/stage_3" },
+    "facing=west": { "model": "mcplus:block/mushrooms/wall/false_death_cap/stage_3", "y": 90 },
+    "facing=north": { "model": "mcplus:block/mushrooms/wall/false_death_cap/stage_3", "y": 180 },
+    "facing=east": { "model": "mcplus:block/mushrooms/wall/false_death_cap/stage_3", "y": 270 }
+  }
+}

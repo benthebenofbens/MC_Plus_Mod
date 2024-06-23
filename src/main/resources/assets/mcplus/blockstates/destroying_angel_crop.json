@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "mcplus:block/mushrooms/ground/destroying_angel/stage_1"
+    },
+    "age=1": {
+      "model": "mcplus:block/mushrooms/ground/destroying_angel/stage_2"
+    },
+    "age=2": {
+      "model": "mcplus:block/mushrooms/ground/destroying_angel/stage_3"
+    },
+    "age=3": {
+      "model": "mcplus:block/mushrooms/ground/destroying_angel/stage_4"
+    }
+  }
+}

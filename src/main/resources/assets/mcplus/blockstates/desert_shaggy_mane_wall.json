@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "mcplus:block/mushrooms/bunch/desert_shaggy_mane/stage_3" },
+    "facing=west": { "model": "mcplus:block/mushrooms/bunch/desert_shaggy_mane/stage_3", "y": 90 },
+    "facing=north": { "model": "mcplus:block/mushrooms/bunch/desert_shaggy_mane/stage_3", "y": 180 },
+    "facing=east": { "model": "mcplus:block/mushrooms/bunch/desert_shaggy_mane/stage_3", "y": 270 }
+  }
+}

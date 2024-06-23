@@ -1,6 +1,4 @@
-// 1.20.1	2024-06-20T19:35:39.76357	Block States: mcplus
-5331a99bb534f37a73b0fc8ab9828f10f5cdc362 assets/mcplus/blockstates/afungus.json
-18e0dd9b7243ff1618c012a81056b592afaa5f5e assets/mcplus/blockstates/afungus_crop.json
+// 1.20.1	2024-06-21T10:29:37.468055	Block States: mcplus
 937e065e11b3a14cba25092a0158ed951b08a5d3 assets/mcplus/blockstates/bedazzled_cobbled_slate.json
 7462d43d8ac63d80a6edc4b9d874e77966be2eb8 assets/mcplus/blockstates/bedazzled_cobbled_slate_slab.json
 4a72268ef166b165de4b70cec77d21486e0b8400 assets/mcplus/blockstates/bedazzled_cobbled_slate_stairs.json
@@ -127,7 +125,6 @@ a396b4e65c3956b00abfee716bc911f7db09e52f assets/mcplus/blockstates/polished_marb
 8c6b4c6d694eacf5ea09ac8a702f82add55dbf22 assets/mcplus/blockstates/polished_slate_slab.json
 8cbfb574c841397fe8dcadf58d6ca30d5e4b69ad assets/mcplus/blockstates/polished_slate_stairs.json
 4a6782adcc271ff127e550f72e02e2256036bbf4 assets/mcplus/blockstates/polished_slate_wall.json
-2a6998e7efd66370691ef142846697509a7c6112 assets/mcplus/blockstates/potted_afungus.json
 9d71ff7e2c63c458873c12164ac817c9a505900a assets/mcplus/blockstates/slate.json
 5ba083e576fa2b71ef31815af32869b236efe62d assets/mcplus/blockstates/slate_brick_slab.json
 53fbb230efddf7fae4dbee6f82f0fbb0e558734f assets/mcplus/blockstates/slate_brick_stairs.json
@@ -153,11 +150,6 @@ cf586032dd3c03b37e0c57844d00436274056210 assets/mcplus/blockstates/smooth_limest
 96eac3a6ec2a8416b1af61fbe965df0d99c19236 assets/mcplus/blockstates/smooth_slate.json
 6051bc7b2f91aaa6af8fb473080b7f4d39cb3327 assets/mcplus/blockstates/smooth_slate_stairs.json
 8ef1d84ce818b9b9aba15759ca2f961cbadf8acc assets/mcplus/blockstates/smooth_slate_wall.json
-f4c3adaf48ea459b192da83c91b56dd69d8de139 assets/mcplus/models/block/afungus.json
-3d6ef637c98105f71d179dca94ebfa5ab022e8d6 assets/mcplus/models/block/afungus_stage_0.json
-d07cbafd54f23737a8940f9a924f415279051d43 assets/mcplus/models/block/afungus_stage_1.json
-f4c3adaf48ea459b192da83c91b56dd69d8de139 assets/mcplus/models/block/afungus_stage_2.json
-d8edcb10dbbd344a24d0492a2f12c74cad399d1b assets/mcplus/models/block/afungus_stage_3.json
 1d954bd46f6086ebb36c937bea345789bd1a831c assets/mcplus/models/block/bedazzled_cobbled_slate.json
 5b79b2221148818ec9e0f7d2906fd9ae3113e72d assets/mcplus/models/block/bedazzled_cobbled_slate_slab.json
 36f4797cf475e7585219eefba0cf8552ef7196d2 assets/mcplus/models/block/bedazzled_cobbled_slate_slab_top.json
@@ -384,7 +376,6 @@ d6ca724f46cd20f1302ffc70d48f1af7cc4259ab assets/mcplus/models/block/polished_mar
 4ef9ac9bd579e363125b0b420208177ad5b137d3 assets/mcplus/models/block/polished_slate_wall_post.json
 47a566417c0161e076ca354febed387d5f3914fb assets/mcplus/models/block/polished_slate_wall_side.json
 0f2bda8361541a04aac1fd016b6ed6668af81a9c assets/mcplus/models/block/polished_slate_wall_side_tall.json
-53da34880694ffc32fbaf9c391d7770818c4987e assets/mcplus/models/block/potted_afungus.json
 ac99773069f08f3a0e69cb5dbcd408ef8d84c022 assets/mcplus/models/block/slate.json
 258c4dea1f97caffc058a2a0588d672df5122dec assets/mcplus/models/block/slate_brick_slab.json
 8f31c181f3cf7066ff1309eba404369fc94c3e74 assets/mcplus/models/block/slate_brick_slab_top.json
@@ -436,7 +427,6 @@ b622d2fc2a105e3c0cb113e0f662d84f2147bef8 assets/mcplus/models/block/smooth_slate
 04a623f92190b49183a104a68c533e03aceaf9cc assets/mcplus/models/block/smooth_slate_wall_post.json
 6cb39c91a0133bb47c76805f8c35b61d5f7455bc assets/mcplus/models/block/smooth_slate_wall_side.json
 c129b49d3efdfee9e928862a2225b0ce6fc1e9fc assets/mcplus/models/block/smooth_slate_wall_side_tall.json
-30004897a8bddc8d540f2eed7cb0e9f9a28c8237 assets/mcplus/models/item/afungus.json
 7e068e31af2394e0e88653dc03e1e3edac6b0caa assets/mcplus/models/item/bedazzled_cobbled_slate.json
 3becc7172e6d125acd61e5c87ea3c84219bcbec9 assets/mcplus/models/item/bedazzled_slate_bricks.json
 5dcb61167a1f1dfa9bb5139108cb1875f62e266f assets/mcplus/models/item/bedazzled_slate_tiles.json
@@ -512,7 +502,6 @@ aaf9c4afee1c87e9091c2d6866cebafed5d7519c assets/mcplus/models/item/polished_gabb
 4998143fad086e6ec482d0b0e36b9bca060e7d9d assets/mcplus/models/item/polished_limestone.json
 0bbb5fe4d36631c7924e099fc53e29b0097ebffa assets/mcplus/models/item/polished_marble.json
 e60a08fae128a8c9667c8f485ce6e1d0d1dfeec0 assets/mcplus/models/item/polished_slate.json
-34ec8d1c2cfc7202f202cc241a404e667e8976a4 assets/mcplus/models/item/potted_afungus.json
 cec92a9b0ded7c29b5cda1fe1aef548111e16aaa assets/mcplus/models/item/slate.json
 e331769af1f79ab1b37d9df378f91a2cb0cc295e assets/mcplus/models/item/slate_bricks.json
 c2ee5efb4cc40589892cc79489da3ace4309b59e assets/mcplus/models/item/slate_pillar.json

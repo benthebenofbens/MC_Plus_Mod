@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "mcplus:block/mushrooms/ground/giant_puffball/stage_1"
+    },
+    "age=1": {
+      "model": "mcplus:block/mushrooms/ground/giant_puffball/stage_2"
+    },
+    "age=2": {
+      "model": "mcplus:block/mushrooms/ground/giant_puffball/stage_3"
+    },
+    "age=3": {
+      "model": "mcplus:block/mushrooms/ground/giant_puffball/stage_4"
+    }
+  }
+}

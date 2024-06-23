@@ -26,7 +26,7 @@ public class MCPlusMushroomBlock extends BushBlock {
 
     @Override
     protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return super.mayPlaceOn(pState, pLevel, pPos);
+        return pState.isSolidRender(pLevel, pPos);
     }
 
     @Override

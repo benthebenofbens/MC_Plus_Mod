@@ -1,0 +1,8 @@
+{
+  "parent": "mcplus:block/mushrooms/bunch_mushrooms",
+  "render_type": "minecraft:cutout",
+
+  "textures": {
+    "0": "mcplus:block/mushrooms/bunch/golden_halo/stage_1"
+  }
+}
